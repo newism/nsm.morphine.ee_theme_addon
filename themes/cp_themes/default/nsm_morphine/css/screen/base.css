@@ -1,0 +1,49 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Updated:		04/02/2010
+* Notes:		This is the core scren file for the entire site.
+*
+* CONTENTS
+* -------------------------
+* =HTML5 	HTML5 fixes
+* =utils 	Utility classes
+* =alerts 	Alerts
+* 
+*/
+
+/* =HTML5
+------------------------------------------------------------------------------*/
+article,header,footer,section,figure{display:block;}
+
+/* =utils Utility classes
+------------------------------------------------------------------------------*/
+.sr{position:absolute; top:-99999px; left:-99999px;}
+.clearfix{}
+
+
+/* =alerts Alerts and info
+------------------------------------------------------------------------------*/
+.mor .alert{
+    background:#eee;
+	_background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.5)), to(rgba(255,255,255,0)));
+	_background-image:-moz-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+    border:1px solid #ccc;
+    font-size:11px;
+    list-style-type:none;
+    margin:0 0 10px 0;
+    padding:10px;
+}
+.mor .alert > :first-child{margin-top:0 !important;}
+.mor .alert > :last-child{margin-bottom:0 !important;}
+
+.mor .alert.info{background-color:#fefee7;}
+.mor .alert.help{background-color:#e5f7ff;}
+.mor .alert.success{background-color:#eeffe5;}
+.mor .alert.warning{background-color:#fff2e5;}
+.mor .alert.error{background-color:#ffe5e5;}
+
+.mor .tg .alert{border-top:1px dotted #d3dadf;}
+
+.heading h2{font-size:18px;}

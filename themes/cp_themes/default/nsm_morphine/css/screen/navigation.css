@@ -1,0 +1,51 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Notes:		Styles for all navigation elements
+*
+* CONTENTS
+* --------------------------------------------------------------------------------
+* =nav					General navigation class; IE horizontal menus etc
+* =nav-site 			Site Navigation
+* =nav-site-skip 		Skip navigation for the site
+* =nav-section 			Section Navigation
+* =nav-section-skip 	Skip navigation for the section
+* =nav-account 			Member account navigation 
+*/
+
+/* =nav
+------------------------------------------------------------------------------*/
+nav{}
+	.menu,
+	.menu li{margin:0; padding:0; list-style:none;}
+		.menu li a{display:block;}
+
+	.menu.horizontal li,
+	.menu.tabs li{float:left;}
+
+.menu.tabs{
+    background:rgba(167,182,191,.5);
+    _background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
+    _background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.8)), to(rgba(255,255,255,0)));
+	border-top:1px solid #a7b6bf;
+	margin:18px 0;
+	overflow:auto;
+	padding:7px 10px;
+}
+.menu.tabs:first-child{border-top:0;}
+    .menu.tabs a{
+        background:rgba(255,255,255,1);
+        color:#415058;
+        font-size:9px;
+        font-weight:bold;
+        margin-right:5px;
+        padding:6px 10px 5px 10px;
+        text-decoration:none;
+        text-transform:uppercase;
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+    }
+    .menu.tabs a.active{
+        color:#D91350;
+    }

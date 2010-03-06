@@ -1,0 +1,154 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Notes:		Styles for all table groups and tables
+*
+* CONTENTS
+* --------------------------------------------------------------------------------
+* =tg					Table groups
+* =table     			Tables
+*/
+
+/*
+
+Tables and Table groups
+
+<div class='mor-tg'>
+	<h2>Header</h2>
+	<div class='info'>Some information about the table group</div>
+	<div class='mor-alert error'>Error relating to the table group</div>
+	<table>
+		<thead>
+			<tr>
+				<th scope='col'>Header</th>
+				<th scope='col'>Header 2</th>
+			</tr>
+		</thead>
+		<body>
+			<tr>
+				<th scope='row'>Header</th>
+				<td>Content</td>
+			</tr>
+		</thead>
+</div>
+*/
+
+
+/*
+Dark blue:  rgb(49, 62, 70)
+Blue: rgba(167,182,191)
+Light blue: rgb(184, 198, 206);
+*/
+
+
+.mor .tg,
+.mor .tg h2,
+.mor .tg h3,
+.mor .tg .alert,
+.mor .tg .info,
+.mor table{
+    border-color:rgb(167,182,191);
+    border-style:solid;
+    border-width:0;
+}
+
+/* =tg
+------------------------------------------------------------------------------*/
+.mor .tg{
+    background:#fff;
+    border-width:1px;
+    color:#333;
+    margin-top:9px;
+    margin-bottom:18px;
+    -webkit-box-shadow:#fff 0 1px 0;
+}
+.mor .tg > :first-child{border-top:0 !important;}
+.mor .tg h2{
+	background:#313e46; 
+	_background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.15)), to(rgba(255,255,255,0)));
+	_background-image:-moz-linear-gradient(top, rgba(255,255,255,.15), rgba(255,255,255,0));
+	border-left-width:0;
+	border-right-width:0;
+	text-shadow: 0px -1px 0px #000;
+	color:#fff;
+	font-size:14px;
+	font-weight:normal;
+	line-height:20px;
+	margin:-4px -1px 0 -1px;
+	padding:8px 10px;
+	position:relative;
+	text-transform:uppercase;
+	_-webkit-border-top-left-radius:4px;
+	_-webkit-border-top-right-radius:4px;
+	_-moz-border-radius:4px 4px 0 0;
+	_-moz-boz-shadow:0 0 5px 100% #000;
+}
+
+.mor .tg h3{
+    background:#fff;
+/*  background-image:-webkit-gradient(linear, left top, left bottom, 
+                                        from(rgba(0,0,0,.2)),
+                                        to(rgba(0,0,0,0)),
+                                        color-stop(.2, rgba(0,0,0,0))
+                                    );
+*/  
+    border-top-color:#a7b6bf;
+    border-top-width:1px;
+    border-top-style:solid;
+    color:#333 !important;
+    font-size:14px !important;
+    margin:0 !important;
+    padding:10px;
+	text-transform:uppercase;
+}
+
+.mor .tg h2 + h3{border-top:0;}
+
+.mor .tg .alert{border-color:#a7b6bf; border-style:dotted; border-width:1px 0 0; margin:0;}
+.mor .tg h2 + .alert{border-top-width:0;}
+
+.mor .tg .menu{margin:0;}
+/* =table
+------------------------------------------------------------------------------*/
+
+.mor table{
+    border-collapse:collapse;
+    color:#666;
+    font-size:11px;
+    margin:0!important;
+    width:100%;
+}
+    .mor table .note{
+        color:#666;
+        display:block;
+        font-weight:normal;
+        font-size:10px;
+        margin-top:3px;
+    }
+    .mor table tr{}
+        .mor table th,
+        .mor table td{padding:10px;}
+        .mor table th{font-size:12px; text-align:left; vertical-align:middle;}
+        .mor table th.sub-heading{font-weight:normal; width:130px;}
+        .mor table td{}
+
+        .mor table thead{
+            background:rgb(167,182,191);
+        	border-top:1px solid #a7b6bf;
+        	border-bottom:none;
+        	color:#fff;
+        }
+            .mor table thead tr{border-bottom:1px solid #fff;}
+        .mor table tfoot{
+        	border-top:3px double #a7b6bf;
+        	font-weight:bold;
+        }
+
+
+    .mor table tbody tr{border-top:1px dotted #a7b6bf;}
+    .mor table tbody:first-child tr:first-child{border-top-style:solid;}
+    .mor table tbody tr.odd{}
+    .mor table tbody tr.even{background-color: rgba(167,182,191,.2);}
+
+    .mor table tbody th[scope=row]{width:200px;}
