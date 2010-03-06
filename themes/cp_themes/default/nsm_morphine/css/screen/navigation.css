@@ -26,8 +26,8 @@ nav{}
 
 .menu.tabs{
     background:rgba(167,182,191,.5);
-    _background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
-    _background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.8)), to(rgba(255,255,255,0)));
+    background-image:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,.3));
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,.3)));
 	border-top:1px solid #a7b6bf;
 	margin:18px 0;
 	overflow:auto;

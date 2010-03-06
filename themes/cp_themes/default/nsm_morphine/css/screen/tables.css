@@ -1,13 +1,13 @@
 /*
-* Author: 		Leevi Grahan
-* Contact:		leevi@newism.com.au
-* Version:		0.1
-* Notes:		Styles for all table groups and tables
+* Author:       Leevi Grahan
+* Contact:      leevi@newism.com.au
+* Version:      0.1
+* Notes:        Styles for all table groups and tables
 *
 * CONTENTS
 * --------------------------------------------------------------------------------
-* =tg					Table groups
-* =table     			Tables
+* =tg                    Table groups
+* =table                 Tables
 */
 
 /*
@@ -15,22 +15,22 @@
 Tables and Table groups
 
 <div class='mor-tg'>
-	<h2>Header</h2>
-	<div class='info'>Some information about the table group</div>
-	<div class='mor-alert error'>Error relating to the table group</div>
-	<table>
-		<thead>
-			<tr>
-				<th scope='col'>Header</th>
-				<th scope='col'>Header 2</th>
-			</tr>
-		</thead>
-		<body>
-			<tr>
-				<th scope='row'>Header</th>
-				<td>Content</td>
-			</tr>
-		</thead>
+    <h2>Header</h2>
+    <div class='info'>Some information about the table group</div>
+    <div class='mor-alert error'>Error relating to the table group</div>
+    <table>
+        <thead>
+            <tr>
+                <th scope='col'>Header</th>
+                <th scope='col'>Header 2</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <th scope='row'>Header</th>
+                <td>Content</td>
+            </tr>
+        </thead>
 </div>
 */
 
@@ -65,34 +65,27 @@ Light blue: rgb(184, 198, 206);
 }
 .mor .tg > :first-child{border-top:0 !important;}
 .mor .tg h2{
-	background:#313e46; 
-	_background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.15)), to(rgba(255,255,255,0)));
-	_background-image:-moz-linear-gradient(top, rgba(255,255,255,.15), rgba(255,255,255,0));
-	border-left-width:0;
-	border-right-width:0;
-	text-shadow: 0px -1px 0px #000;
-	color:#fff;
-	font-size:14px;
-	font-weight:normal;
-	line-height:20px;
-	margin:-4px -1px 0 -1px;
-	padding:8px 10px;
-	position:relative;
-	text-transform:uppercase;
-	_-webkit-border-top-left-radius:4px;
-	_-webkit-border-top-right-radius:4px;
-	_-moz-border-radius:4px 4px 0 0;
-	_-moz-boz-shadow:0 0 5px 100% #000;
+    background:#313e46; 
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0)));
+    background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+    border-left-width:0;
+    border-right-width:0;
+    text-shadow: 0px -1px 0px #000;
+    color:#fff;
+    font-size:14px;
+    font-weight:normal;
+    line-height:20px;
+    margin:-4px -1px 0 -1px;
+    padding:8px 10px;
+    position:relative;
+    text-transform:uppercase;
+    -webkit-border-top-left-radius:4px;
+    -webkit-border-top-right-radius:4px;
+    -moz-border-radius:4px 4px 0 0;
 }
 
 .mor .tg h3{
     background:#fff;
-/*  background-image:-webkit-gradient(linear, left top, left bottom, 
-                                        from(rgba(0,0,0,.2)),
-                                        to(rgba(0,0,0,0)),
-                                        color-stop(.2, rgba(0,0,0,0))
-                                    );
-*/  
     border-top-color:#a7b6bf;
     border-top-width:1px;
     border-top-style:solid;
@@ -100,7 +93,7 @@ Light blue: rgb(184, 198, 206);
     font-size:14px !important;
     margin:0 !important;
     padding:10px;
-	text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .mor .tg h2 + h3{border-top:0;}
@@ -109,6 +102,7 @@ Light blue: rgb(184, 198, 206);
 .mor .tg h2 + .alert{border-top-width:0;}
 
 .mor .tg .menu{margin:0;}
+
 /* =table
 ------------------------------------------------------------------------------*/
 
@@ -129,26 +123,31 @@ Light blue: rgb(184, 198, 206);
     .mor table tr{}
         .mor table th,
         .mor table td{padding:10px;}
-        .mor table th{font-size:12px; text-align:left; vertical-align:middle;}
+        .mor table th{text-align:left; vertical-align:middle;}
         .mor table th.sub-heading{font-weight:normal; width:130px;}
-        .mor table td{}
+        .mor table td{font-size:10px;}
 
         .mor table thead{
             background:rgb(167,182,191);
-        	border-top:1px solid #a7b6bf;
-        	border-bottom:none;
-        	color:#fff;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,0)));
+            background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
+            border-top:1px solid #a7b6bf;
+            border-bottom:none;
+            color:#fff;
+            font-size:12px;
+            text-shadow:0 -1px 1px #697b85;
         }
             .mor table thead tr{border-bottom:1px solid #fff;}
+            .mor table thead th{}
         .mor table tfoot{
-        	border-top:3px double #a7b6bf;
-        	font-weight:bold;
+            border-top:3px double #a7b6bf;
+            font-weight:bold;
         }
 
 
     .mor table tbody tr{border-top:1px dotted #a7b6bf;}
     .mor table tbody:first-child tr:first-child{border-top-style:solid;}
     .mor table tbody tr.odd{}
-    .mor table tbody tr.even{background-color: rgba(167,182,191,.2);}
+    .mor table tbody tr.even{background-color: rgba(167,182,191,.1);}
 
     .mor table tbody th[scope=row]{width:200px;}
