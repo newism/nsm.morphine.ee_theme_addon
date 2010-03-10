@@ -17,27 +17,31 @@
     background:#fff;
     border-width:1px;
     border-style:solid;
-    border-color:transparent;
-    color:inherit;
+    border-color:rgba(255,255,255,.5);
+    border-top-color:rgba(255,255,255,.9);
+    color:#555;
     font-size:12px;
     list-style-type:none;
     line-height:1.5em;
     margin:0 0 10px 0;
     padding:5px 10px;
+    -webkit-box-shadow:0 0px 2px rgba(0,0,0,.2);
+    background-image:-moz-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,0)));
+    text-shadow:0 1px 0 #fff;
 }
 
 .mor .alert > :first-child{margin-top:0 !important;}
 .mor .alert > :last-child{margin-bottom:0 !important;}
 
-.mor .alert .info, .mor .alert .help, .mor .alert .success, .mor .alert .error{}
-.mor .alert .info{color:#837c00;}
-.mor .alert .help{color:#0054a6;}
-.mor .alert .success{color:#39b54a;}
-.mor .alert .error{color:#ed1c24;}
+.mor .alert .info, .mor .alert .help, .mor .alert .success, .mor .alert .error{color:inherit;}
+.mor .alert .info{}
+.mor .alert .success{}
+.mor .alert .error{}
 
-.mor .alert.info{background:#fffccc; border-color:#fffa99;}
-.mor .alert.help{background:#ccdded; border-color:#99bbdb;}
-.mor .alert.success{background:#d7f0db; border-color:#b0e1b7;}
-.mor .alert.error{background:#fbd2d3; border-color:#f8a4a7;}
+.mor .alert.info{background-color:#fffcbf;}
+.mor .alert.help{background-color:#ccdded;}
+.mor .alert.success{background-color:#d0ffbb;}
+.mor .alert.error{background-color:#ffcbbf;}
 
 .mor .tg .alert{border-top:1px dotted #d3dadf;}

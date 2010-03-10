@@ -20,17 +20,16 @@ nav{}
 	.menu.tabs li{float:left;}
 
 .menu.tabs{
-    background:rgba(167,182,191,.5);
-    background-image:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,.3));
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,.3)));
-	border-top:1px solid #a7b6bf;
+    background-color:#c8d2d7;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .2)), to(rgba(255, 255, 255, 0))); 
+    border-bottom:1px solid #fff;
 	margin:0 0 18px 0;
 	overflow:auto;
 	padding:7px 7px 0 7px;
 }
-.menu.tabs:first-child{border-top:0;}
+.menu.tabs:first-child{}
     .menu.tabs a{
-        background:rgba(255,255,255,1);
+        background:rgba(255,255,255,.9);
         color:#415058;
         font-size:9px;
         font-weight:bold;
@@ -43,5 +42,7 @@ nav{}
         -moz-border-radius:30px;
     }
     .menu.tabs a.active{
-        color:#D91350;
+        background:#d91350;
+        color:#fff;
+        text-shadow:0 -1px 0 rgba(0,0,0,.5);
     }

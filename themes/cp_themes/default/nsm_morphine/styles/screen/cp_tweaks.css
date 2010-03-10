@@ -1,16 +1,32 @@
 #accessoryTabs li,
-.heading{
+.pageContents,
+.homeBlocks,
+#publishForm{
     -webkit-border-radius:0 !important;
     -moz-border-radius:0 !important;
 }
 
+#mainContent .heading,
+.contents .heading{
+    background:#92a5b0;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(125, 141, 150, 0)), to(rgba(125, 141, 150, 1))); 
+    border-bottom:1px solid rgba(0,0,0,.2);
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -webkit-border-radius-top:4px;
+}
+
 .heading h2,
-#mainContent .contentMenu h2{
+#mainContent .heading h2{
     font-size:16px;
     background:none;
     padding:8px 15px;
     text-shadow:0 -1px 0 rgba(0,0,0,.3);
 }
+
+.pageContents{background:#ecf1f4;}
+
+#mainContent .formArea .formHeading{background:#323f47;}
 
 #accessoriesDiv{}
 #accessoryTabs{
@@ -89,7 +105,8 @@
 #navigationTabs li li ul li:first-child > a{background:none;}
 
 #breadCrumb{
-    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0))); 
+    background:#ecf1f4;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0))); 
     border-bottom:1px solid #cfd8dd;
     border-top:1px solid #fff;
     margin-bottom:18px;
@@ -106,13 +123,20 @@
     text-transform:uppercase;
 }
 
-input.submit{
+
+input.submit,
+#mainContent .formArea .formHeading .newTemplate a{
     border:1px solid #bf1145;
-    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0))); 
+    background: #d91350;
+    font-size:11px;
     color:#fff;
     text-shadow:0 -1px 0 rgba(0,0,0,.5);
-    padding:5px 10px;
+    margin-left:3px !important;
+    padding:0px 10px;
+    -webkit-border-radius:3px;
 }
+#mainContent .formArea .formHeading .newTemplate{background:none; padding:0; margin:0!important;}
+input.submit{padding:5px 10px;}
 
 .rightNav .button{margin-right:0; margin-left:6px;}
 .rightNav a.submit,
@@ -132,8 +156,10 @@ input.submit{
 
 #mainContent #publishForm{padding-top:0; position:relative; border:1px solid #d1d5de; border-top:0;}
 #mainContent .tab_menu{
-    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0))); 
-    border-bottom:none;
+    background-color:#c8d2d7;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .2)), to(rgba(255, 255, 255, 0))); 
+    border-top:1px solid rgba(255,255,255,.5);
+    border-bottom:1px solid rgba(0,0,0,.2);
     height:auto;
     font-size:11px;
     margin:0;
@@ -153,11 +179,13 @@ input.submit{
     width:auto;
 }
 #mainContent .tab_menu li,
-#mainContent .tab_menu li.current{}
+#mainContent .tab_menu li.current{border-right:1px dotted rgba(255,255,255,.5);}
+#mainContent .tab_menu li{}
+#mainContent .tab_menu li.current{padding-right:5px; padding-left:5px;}
 #mainContent .tab_menu li.highlight_tab{background:#d91350; color:#fff;}
 #mainContent .tab_menu li a{font-size:inherit; margin:6px 0; padding:0 10px; -webkit-border-radius:20px; -moz-border-radius:20px;}
 #mainContent .tab_menu li.highlight_tab a{color:#fff; text-shadow:0 -1px 0 rgba(0,0,0,.5);}
-#mainContent .tab_menu li.current a{color:#d91350; background:#fff;}
+#mainContent .tab_menu li.current a{color:#fff; background:#d91350; text-shadow:0 -1px 0 rgba(0,0,0,.3);}
 #mainContent #publishForm .tab_menu li.addTabButton{padding:0;}
 
 #mainContent .main_tab{padding-top:0; padding-right:0; padding-left:0;}
@@ -176,9 +204,9 @@ input.submit{
 #mainContent div#tools h3 a.closed{background:none; padding:0 10px;}
 
 #mainContent #holder{padding:0; margin:0; padding:0; border:none;}
-.publish_field{border-left:0; margin:0;}
+.publish_field{background:none; border-left:0; margin:0;}
 
-#mainContent #showToolbarLink{background:none!important; position:absolute; top:7px; right:10px; margin-right:0!important;}
+#mainContent #showToolbarLink{background:none!important; font-size:9px; position:absolute; top:7px; right:10px; margin-right:0!important;}
 #mainContent #showToolbarLink a{color:#445058; text-shadow:0 1px 0 rgba(255,255,255,1); text-transform:uppercase;}
 #mainContent #showToolbarLink img{display:none !important;}
 

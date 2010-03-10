@@ -58,8 +58,9 @@ Tables and Table groups
 }
 .mor .tg > :first-child{border-top:0 !important;}
 .mor .tg h2{
-    background:#313e46; 
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0)));
+    background:#323f47;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0))),
+        -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.1)), to(rgba(72,102,118,0)));
     background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
     border-left-width:0;
     border-right-width:0;
@@ -121,17 +122,14 @@ Tables and Table groups
         .mor table td{font-size:10px;}
 
         .mor table thead{
-            background:rgb(167,182,191);
-            background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,0)));
-            background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
+            background:#adbcc4;
             border-top:1px solid #a7b6bf;
             border-bottom:none;
             color:#fff;
-            font-size:12px;
-            text-shadow:0 -1px 1px #697b85;
+            text-shadow:0 -1px 1px #7d8d96;
         }
             .mor table thead tr{border-bottom:1px solid #fff;}
-            .mor table thead th{}
+            .mor table thead th{font-size:12px;}
         .mor table tfoot{
             border-top:3px double #a7b6bf;
             font-weight:bold;
@@ -141,7 +139,7 @@ Tables and Table groups
     .mor table tbody tr{border-top:1px dotted #a7b6bf;}
     .mor table tbody:first-child tr:first-child{border-top-style:solid;}
     .mor table tbody tr.odd{}
-    .mor table tbody tr.even{background-color: rgba(167,182,191,.1);}
+    .mor table tbody tr.even{background-color: #f5f8f9}
 
     .mor table tbody th[scope=row]{width:200px;}
 
