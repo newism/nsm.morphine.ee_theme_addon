@@ -1,0 +1,72 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Updated:		04/02/2010
+* Notes:		Alert styles
+*
+* CONTENTS
+* -------------------------
+* =alerts 	Alerts
+* 
+*/
+
+/* =alerts Alerts and info
+------------------------------------------------------------------------------*/
+.mor .alert{
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+    border:1px solid rgb(208, 215, 223);
+    font-size:12px;
+    list-style-type:none;
+    line-height:1.5em;
+    margin:0 0 10px 0;
+    opacity:.9;
+    padding:5px 10px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    -webkit-border-radius:5px;
+}
+._mor .alert{position:fixed; top:0; right:0; left:0;}
+.mor .alert > :first-child{margin-top:0 !important;}
+.mor .alert > :last-child{margin-bottom:0 !important;}
+
+.mor .alert .info{color:#d3ae02;}
+.mor .alert .help{color:#00538a;}
+.mor .alert .success{color:#598527;}
+.mor .alert .error{color:#9e0b0f;}
+
+.mor .alert.info{
+    color:#000;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#ffe749), to(#edc301));
+    _background:#edc301;
+    border:1px solid #d3ae02;
+    border-bottom-color:#d3ae02;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    text-align:center;
+    
+}
+.mor .alert.help{
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#0072bc), to(#00538a));
+    border:1px solid #00538a;
+    border-bottom-color:#003457;
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,1);
+    text-align:center;
+}
+.mor .alert.success{
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#7bb835), to(#598527));
+    border:1px solid #598527;
+    border-bottom-color:#375218;
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+    text-align:center;
+}
+.mor .alert.error{
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#d10f15), to(#9e0b0f));
+    border:1px solid #9e0b0f;
+    border-bottom-color:#520608;
+    color:#fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+    text-align:center;
+}
+
+.mor .tg .alert{border-top:1px dotted #d3dadf;}

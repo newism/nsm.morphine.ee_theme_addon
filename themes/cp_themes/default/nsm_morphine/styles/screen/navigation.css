@@ -7,11 +7,6 @@
 * CONTENTS
 * --------------------------------------------------------------------------------
 * =nav					General navigation class; IE horizontal menus etc
-* =nav-site 			Site Navigation
-* =nav-site-skip 		Skip navigation for the site
-* =nav-section 			Section Navigation
-* =nav-section-skip 	Skip navigation for the section
-* =nav-account 			Member account navigation 
 */
 
 /* =nav
@@ -29,9 +24,9 @@ nav{}
     background-image:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,.3));
     background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,.3)));
 	border-top:1px solid #a7b6bf;
-	margin:18px 0;
+	margin:0 0 18px 0;
 	overflow:auto;
-	padding:7px 10px;
+	padding:7px 7px 0 7px;
 }
 .menu.tabs:first-child{border-top:0;}
     .menu.tabs a{
@@ -39,7 +34,8 @@ nav{}
         color:#415058;
         font-size:9px;
         font-weight:bold;
-        margin-right:5px;
+        margin-right:7px;
+        margin-bottom:7px;
         padding:6px 10px 5px 10px;
         text-decoration:none;
         text-transform:uppercase;

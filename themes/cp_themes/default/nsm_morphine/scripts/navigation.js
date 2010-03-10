@@ -4,7 +4,6 @@ $('.menu.tabs').each(function(index) {
         target_selectors.push(this.hash);
     })
     .click(function() {
-        $targets.hide();
         $triggers.removeClass("active");
         if((/show_all$/).test(this.hash))
         {
@@ -14,6 +13,7 @@ $('.menu.tabs').each(function(index) {
         {
             $(this).addClass("active");
             $targets.filter(this.hash).fadeIn();
+            $targets.not(this.hash).hide();
         }
         return false;
     });

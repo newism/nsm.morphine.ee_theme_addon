@@ -6,8 +6,9 @@
 *
 * CONTENTS
 * --------------------------------------------------------------------------------
-* =tg                    Table groups
-* =table                 Tables
+* =tg       Table groups
+* =table    Standard tables
+* =data     Date Tables
 */
 
 /*
@@ -33,14 +34,6 @@ Tables and Table groups
         </thead>
 </div>
 */
-
-
-/*
-Dark blue:  rgb(49, 62, 70)
-Blue: rgba(167,182,191)
-Light blue: rgb(184, 198, 206);
-*/
-
 
 .mor .tg,
 .mor .tg h2,
@@ -92,13 +85,13 @@ Light blue: rgb(184, 198, 206);
     color:#333 !important;
     font-size:14px !important;
     margin:0 !important;
-    padding:10px;
+    padding:10px !important;
     text-transform:uppercase;
 }
 
 .mor .tg h2 + h3{border-top:0;}
 
-.mor .tg .alert{border-color:#a7b6bf; border-style:dotted; border-width:1px 0 0; margin:0;}
+.mor .tg .alert{border-color:#a7b6bf; border-style:dotted; border-width:1px 0 0; margin:0; -webkit-border-radius:0; text-align:left;}
 .mor .tg h2 + .alert{border-top-width:0;}
 
 .mor .tg .menu{margin:0;}
@@ -122,8 +115,8 @@ Light blue: rgb(184, 198, 206);
     }
     .mor table tr{}
         .mor table th,
-        .mor table td{padding:10px;}
-        .mor table th{text-align:left; vertical-align:middle;}
+        .mor table td{line-height:18px; padding:6px 10px;}
+        .mor table th{font-size:11px; text-align:left; vertical-align:middle;}
         .mor table th.sub-heading{font-weight:normal; width:130px;}
         .mor table td{font-size:10px;}
 
@@ -151,3 +144,31 @@ Light blue: rgb(184, 198, 206);
     .mor table tbody tr.even{background-color: rgba(167,182,191,.1);}
 
     .mor table tbody th[scope=row]{width:200px;}
+
+/* =datatable Data tables are used for displaying tabular data
+------------------------------------------------------------------------------*/
+
+    .mor table.data col.id{width:50px;}
+    .mor table.data col.date{width:120px;}
+
+    .mor table.data th:first-child,
+    .mor table.data td:first-child{border-left:none;}
+    .mor table.data th{border-left:1px dotted rgba(255, 255, 255,.25);}
+    .mor table.data td{border-left:1px dotted rgba(184, 198, 206,.5)}
+
+    .mor table.data tbody th,
+    .mor table.data tbody td{padding:4px 10px;}
+    .mor table.data tbody th[scope=row]{width:auto;}
+
+    .mor table.col-sortable thead th.header{
+    	background-image:url('../../images/bg/sort-unsorted.png');
+    	background-repeat:no-repeat;
+    	background-position:center right;
+    	cursor:pointer;
+    	padding-right:20px;
+    }
+    .mor table.col-sortable thead th.header:hover{background-image:url('../../images/bg/sort-unsorted-hover.png');}
+    .mor table.col-sortable thead th.header.headerSortDown,
+    .mor table.col-sortable thead th.header.headerSortUp{background-color:rgba(255,255,255,.1);}
+    .mor table.col-sortable thead th.header.headerSortDown{background-image: url('../../images/bg/sort-down.png'); }
+    .mor table.col-sortable thead th.header.headerSortUp{background-image: url('../../images/bg/sort-up.png'); }
