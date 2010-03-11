@@ -17,7 +17,8 @@ class Nsm_morphine_theme_mcp
 
 	public function index()
 	{
-		return $this->_renderLayout("index", "");
+		$out = $this->EE->load->view("dashboard/index", array(), TRUE);
+		return $this->_renderLayout("index", $out);
 	}
 
 	public function tables()
