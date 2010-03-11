@@ -97,10 +97,6 @@ class Nsm_morphine_theme_ft extends EE_Fieldtype
 
 		$theme_folder_url .= "cp_themes/" . $theme . "nsm_morphine/";
 
-		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
-		$EE->cp->add_to_foot('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/navigation.js"></script>');
-		$EE->cp->add_to_foot('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/behaviours.js"></script>');
-		
 		$out = "<div class='mor cf'>";
 		$out .= $this->EE->load->view('alerts/index', array(), TRUE);
 		$out .= $this->EE->load->view('tables/index', array(), TRUE);
