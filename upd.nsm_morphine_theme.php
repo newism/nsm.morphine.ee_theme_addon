@@ -9,9 +9,9 @@
 class Nsm_morphine_theme_upd
 {
 	public $version = '2.0.0';
-	static $has_cp_backend = TRUE;
-	static $has_publish_fields = TRUE;
-	static $has_tabs = TRUE;
+	static $has_cp_backend = FALSE;
+	static $has_publish_fields = FALSE;
+	static $has_tabs = FALSE;
 	private $tabs = array("NSM Morphine Theme" => array(
 		"NSM Morphine theme tables" => array(
 			'visible'		=> 'true',
@@ -43,7 +43,10 @@ class Nsm_morphine_theme_upd
 			'has_publish_fields' => (self::$has_publish_fields) ? "y" : "n"
 		);
 		$this->EE->db->insert('modules', $data);
-		$this->EE->cp->add_layout_tabs($this->tabs, $data['module_name']);
+
+		if($this->has_tabs)
+			$this->EE->cp->add_layout_tabs($this->tabs, $data['module_name']);
+
 		return TRUE;
 	}
 
@@ -86,7 +89,8 @@ class Nsm_morphine_theme_upd
 		$this->EE->db->where('class', $module_name . "_mcp");
 		$this->EE->db->delete('actions');
 
-		$this->EE->cp->delete_layout_tabs($this->tabs, $module_name);
+		if($this->has_tabs)
+			$this->EE->cp->delete_layout_tabs($this->tabs, $module_name);
 
 		return TRUE;
 	}
