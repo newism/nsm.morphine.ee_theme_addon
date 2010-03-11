@@ -22,14 +22,13 @@ nav{}
 .menu.tabs{
     background-color:#c8d2d7;
     background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .2)), to(rgba(255, 255, 255, 0))); 
-    border-bottom:1px solid #fff;
 	margin:0 0 18px 0;
 	overflow:auto;
 	padding:7px 7px 0 7px;
 }
 .menu.tabs:first-child{}
     .menu.tabs a{
-        background:rgba(255,255,255,.9);
+        background:rgba(255,255,255,1);
         color:#415058;
         font-size:9px;
         font-weight:bold;

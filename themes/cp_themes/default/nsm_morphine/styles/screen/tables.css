@@ -38,8 +38,6 @@ Tables and Table groups
 .mor .tg,
 .mor .tg h2,
 .mor .tg h3,
-.mor .tg .alert,
-.mor .tg .info,
 .mor table{
     border-color:rgb(167,182,191);
     border-style:solid;
@@ -92,9 +90,6 @@ Tables and Table groups
 
 .mor .tg h2 + h3{border-top:0;}
 
-.mor .tg .alert{border-color:#a7b6bf; border-style:dotted; border-width:1px 0 0; margin:0; -webkit-border-radius:0; text-align:left;}
-.mor .tg h2 + .alert{border-top-width:0;}
-
 .mor .tg .menu{margin:0;}
 
 /* =table
@@ -122,7 +117,9 @@ Tables and Table groups
         .mor table td{font-size:10px;}
 
         .mor table thead{
-            background:#adbcc4;
+            background-color:#adbcc4;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,0)));            background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
+            background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
             border-top:1px solid #a7b6bf;
             border-bottom:none;
             color:#fff;
