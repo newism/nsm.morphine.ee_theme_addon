@@ -40,6 +40,7 @@
         .mor input[type=checkbox],
         .mor input[type=radio]{margin-right:3px;}
         .mor input[type=text]{width:95%; padding:5px;}
+        input.hasDatePicker{width:100px;}
 
         .mor textarea{height:100px; width:95%;}
 

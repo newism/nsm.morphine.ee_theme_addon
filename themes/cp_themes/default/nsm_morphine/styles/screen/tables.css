@@ -115,6 +115,7 @@ Tables and Table groups
         .mor table th{font-size:11px; text-align:left; vertical-align:middle;}
         .mor table th.sub-heading{font-weight:normal; width:130px;}
         .mor table td{font-size:10px;}
+        .mor table td.dragHandle{cursor:move;}
 
         .mor table thead{
             background-color:#adbcc4;
@@ -125,6 +126,7 @@ Tables and Table groups
             color:#fff;
             text-shadow:0 -1px 1px #7d8d96;
         }
+		.mor table:first-child thead:first-child{border-top:0;}
             .mor table thead tr{border-bottom:1px solid #fff;}
             .mor table thead th{font-size:12px;}
         .mor table tfoot{
@@ -155,15 +157,45 @@ Tables and Table groups
     .mor table.data tbody td{padding:4px 10px;}
     .mor table.data tbody th[scope=row]{width:auto;}
 
-    .mor table.col-sortable thead th.header{
-    	background-image:url('../../images/bg/sort-unsorted.png');
-    	background-repeat:no-repeat;
-    	background-position:center right;
-    	cursor:pointer;
-    	padding-right:20px;
-    }
-    .mor table.col-sortable thead th.header:hover{background-image:url('../../images/bg/sort-unsorted-hover.png');}
-    .mor table.col-sortable thead th.header.headerSortDown,
-    .mor table.col-sortable thead th.header.headerSortUp{background-color:rgba(255,255,255,.1);}
-    .mor table.col-sortable thead th.header.headerSortDown{background-image: url('../../images/bg/sort-down.png'); }
-    .mor table.col-sortable thead th.header.headerSortUp{background-image: url('../../images/bg/sort-up.png'); }
+/* =col-sortable Sortable columns
+------------------------------------------------------------------------------*/
+
+.mor table.col-sortable thead th.header{
+	background-image:url('../../images/bg/sort-unsorted.png');
+	background-repeat:no-repeat;
+	background-position:center right;
+	cursor:pointer;
+	padding-right:20px;
+}
+
+.mor table.col-sortable thead th.header:hover{background-image:url('../../images/bg/sort-unsorted-hover.png');}
+.mor table.col-sortable thead th.header.headerSortDown,
+.mor table.col-sortable thead th.header.headerSortUp{background-color:rgba(255,255,255,.1);}
+.mor table.col-sortable thead th.header.headerSortDown{background-image: url('../../images/bg/sort-down.png'); }
+.mor table.col-sortable thead th.header.headerSortUp{background-image: url('../../images/bg/sort-up.png'); }
+
+/* =row-sortable Sortable rows
+------------------------------------------------------------------------------*/
+
+.mor table.row-sortable tr.tDnD_whileDrag,
+.mor table.row-sortable tr.odd.tDnD_whileDrag{
+    background:#323f47;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.4)), to(rgba(0,0,0,.2))),
+        -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.2)), to(rgba(72,102,118,0)));
+    background-image:-moz-linear-gradient(top, rgba(0,0,0,.4), rgba(0,0,0,.2));
+	border-top-style:solid;
+	border-top-color:#000;
+	border-bottom-color:#000;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	cursor:move;
+}
+
+.mor table.row-sortable tr.tDnD_whileDrag th,
+.mor table.row-sortable tr.tDnD_whileDrag td{color:#fff; text-shadow:#000 0 -1px 0;}
+.mor table.row-sortable tr.tDnD_whileDrag td.dragHandle span{opacity:.3;}
+
+/* =cloneable Cloneable tables allow the user to add as many rows as nessecary
+------------------------------------------------------------------------------*/
+
+table.cloneable .add{display:block; padding:7px; text-align:center;}
