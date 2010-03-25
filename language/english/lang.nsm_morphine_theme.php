@@ -5,7 +5,7 @@ $lang = array(
 	'nsm_morphine_theme_module_name'		=> 'NSM Morphine Theme',
 	'nsm_morphine_theme_module_description'	=> 'Testing theme elements',
 	
-	// Alerts
+	// Index
 	'index_page_title' => 'NSM Morphine style tests',
 	'index_nav_title' => 'Dashboard',
 
@@ -15,5 +15,9 @@ $lang = array(
 	
 	// Tables
 	'tables_page_title' => 'Tables',
-	'tables_nav_title' => 'Tables'
+	'tables_nav_title' => 'Tables',
+	
+	// Alerts
+	'buttons_page_title' => 'Buttons &amp; Icons',
+	'buttons_nav_title' => 'Buttons &amp; Icons',
 );
