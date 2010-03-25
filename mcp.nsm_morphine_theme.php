@@ -7,7 +7,7 @@
  */
 class Nsm_morphine_theme_mcp
 {
-	private $pages = array("index", "tables", "alerts");
+	private $pages = array("index", "tables", "alerts", "buttons");
 
 	public function __construct()
 	{
@@ -31,6 +31,12 @@ class Nsm_morphine_theme_mcp
 	{
 		$out = $this->EE->load->view("alerts/index", array(), TRUE);
 		return $this->_renderLayout("alerts", $out);
+	}
+
+	public function buttons()
+	{
+		$out = $this->EE->load->view("buttons/index", array(), TRUE);
+		return $this->_renderLayout("buttons", $out);
 	}
 
 	public function _renderLayout($page, $out = FALSE)

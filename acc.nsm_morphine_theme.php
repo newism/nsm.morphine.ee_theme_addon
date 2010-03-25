@@ -31,8 +31,13 @@ class Nsm_morphine_theme_acc
 		$theme_folder_url .= "cp_themes/" . $theme . "nsm_morphine/";
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
-		$EE->cp->add_to_foot('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/navigation.js"></script>');
-		$EE->cp->add_to_foot('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/behaviours.js"></script>');
+
+		$js_libs = array('metadata', 'NSM_MagicCheckboxes', 'NSM_Stripeable',
+		                'NSM_UpdateInputsOnChange', 'NSM_Cloneable', 'NSM_Navigation',
+		                'tablednd.0.5', 'behaviours');
+
+		foreach ($js_libs as $lib)
+    	    $EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/jquery.'.$lib.'.js"></script>');
 
 		$this->sections[] = '<script type="text/javascript" charset="utf-8">$("#accessoryTabs a.nsm_morphine_theme").parent().remove();</script>';
 	}
