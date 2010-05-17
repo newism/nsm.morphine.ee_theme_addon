@@ -22,10 +22,13 @@ nav{}
 .menu.tabs{
     background-color:#c8d2d7;
     background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .2)), to(rgba(255, 255, 255, 0))); 
+	border-top:1px solid #bec7cc;
+	border-bottom:1px solid #fff;
 	margin:0 0 18px 0;
 	overflow:auto;
 	padding:7px 7px 0 7px;
 }
+.tg .menu.tabs{border-bottom:0;}
 .menu.tabs:first-child{}
     .menu.tabs a{
         background:rgba(255,255,255,1);
@@ -43,5 +46,6 @@ nav{}
     .menu.tabs a.active{
         background:#d91350;
         color:#fff;
-        text-shadow:0 -1px 0 rgba(0,0,0,.5);
+        _text-shadow:0 -1px 0 rgba(0,0,0,.5);
+
     }

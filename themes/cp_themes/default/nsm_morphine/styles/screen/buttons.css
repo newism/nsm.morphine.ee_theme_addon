@@ -27,6 +27,8 @@ button, .btn{
 	color:#535d63;
 	text-shadow:0 1px 0 #fff;
 	position:relative;
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
 }
 
 .tg table + button, .tg table + .btn{
@@ -54,6 +56,7 @@ button[type=submit], .btn.submit{
 	border-bottom-color:#a10060;
 	color:#fff!important;
 	text-shadow: 0 -1px 0 #a10060;
+	
 }
 
 button.add, .btn.add{

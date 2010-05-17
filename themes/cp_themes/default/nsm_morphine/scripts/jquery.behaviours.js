@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$("table.col-sortable").tablesorter();
-	$("table.NSM_Stripeable").NSM_Stripeable();
-	$("table.NSM_MagicCheckboxes").NSM_MagicCheckboxes()
+	$(".mor table.col-sortable").tablesorter();
+	$(".mor table.NSM_Stripeable").NSM_Stripeable();
+	$(".mor table.NSM_MagicCheckboxes").NSM_MagicCheckboxes()
 });
 

@@ -13,7 +13,7 @@
 		<tbody>
 		</tbody>
 	</table>
-	<button class="add">Add a row</a>
+	<span class="btn add" href="#">Add a row</span>
 </div>
 <script type="text/javascript" charset="utf-8">
 	$("#complex table").NSM_Cloneable({

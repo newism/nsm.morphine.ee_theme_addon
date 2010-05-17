@@ -8,9 +8,9 @@
 	<li><a href="#show_all">Show all</a></li>
 </ul>
 
-<?= $this->EE->load->view("tables/simple", array(), TRUE); ?>
-<?= $this->EE->load->view("tables/NSM_MagicCheckboxes", array(), TRUE); ?>
-<?= $this->EE->load->view("tables/sortable", array(), TRUE); ?>
-<?= $this->EE->load->view("tables/draggable", array(), TRUE); ?>
-<?= $this->EE->load->view("tables/NSM_Cloneable", array(), TRUE); ?>
-<?= $this->EE->load->view("tables/complex", array(), TRUE); ?>
+<?= $this->load->view("tables/simple", array(), TRUE); ?>
+<?= $this->load->view("tables/NSM_MagicCheckboxes", array(), TRUE); ?>
+<?= $this->load->view("tables/sortable", array(), TRUE); ?>
+<?= $this->load->view("tables/draggable", array(), TRUE); ?>
+<?= $this->load->view("tables/NSM_Cloneable", array(), TRUE); ?>
+<?= $this->load->view("tables/complex", array(), TRUE); ?>
