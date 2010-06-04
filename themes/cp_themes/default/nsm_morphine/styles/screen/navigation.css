@@ -44,8 +44,10 @@ nav{}
         -moz-border-radius:30px;
     }
     .menu.tabs a.active{
-        background:#d91350;
-        color:#fff;
-        _text-shadow:0 -1px 0 rgba(0,0,0,.5);
-
+		color:#fff;
+		font-weight:normal;
+		background:rgba(116,132,140,.3);
+		text-shadow:0 -1px 0 rgba(0,0,0,.2);
+		-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.5);
+		-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.2);
     }

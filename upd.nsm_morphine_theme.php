@@ -9,7 +9,7 @@
 class Nsm_morphine_theme_upd
 {
 	public $version = '2.0.0';
-	static $has_cp_backend = FALSE;
+	static $has_cp_backend = TRUE;
 	static $has_publish_fields = FALSE;
 	static $has_tabs = FALSE;
 	private $tabs = array("NSM Morphine Theme" => array(

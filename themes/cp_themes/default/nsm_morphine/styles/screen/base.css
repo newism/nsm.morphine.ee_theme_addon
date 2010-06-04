@@ -20,4 +20,12 @@ article,header,footer,section,figure{display:block;}
 /* =utils Utility classes
 ------------------------------------------------------------------------------*/
 .sr{position:absolute; top:-99999px; left:-99999px;}
-.clearfix{}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	zoom: 1;
+}

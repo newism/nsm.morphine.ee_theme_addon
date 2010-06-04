@@ -13,3 +13,8 @@
 	<a class="btn add">An add action button</a>
 	<a class="btn delete">A delete action button</a>
 </p>
+
+<h3>Icons: <code>.icon</code></h3>
+<a href="#" class="icon add">Add</a>
+<a href="#" class="icon delete">Delete</a>
+<a href="#" class="icon sort">Sort</a>

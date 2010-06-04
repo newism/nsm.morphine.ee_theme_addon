@@ -42,12 +42,13 @@ Tables and Table groups
     border-color:rgb(167,182,191);
     border-style:solid;
     border-width:0;
+	position:relative;
 }
 
 /* =tg
 ------------------------------------------------------------------------------*/
 .mor .tg{
-    background:#fff;
+    background:transparent;
     border-width:1px;
     color:#333;
     margin-top:9px;
@@ -92,10 +93,20 @@ Tables and Table groups
 
 .mor .tg .menu{margin:0;}
 
+.mor .tg .info{
+	background-color:#fffcbf;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	font-size:11px;
+	padding:10px;
+}
+.mor .tg .info :first-child{margin-top:0!important;}
+.mor .tg .info :last-child{margin-bottom:0!important;}
 /* =table
 ------------------------------------------------------------------------------*/
 
 .mor table{
+	background:#fff;
     border-collapse:collapse;
     color:#666;
     font-size:11px;
@@ -191,11 +202,23 @@ Tables and Table groups
 	cursor:move;
 }
 
+.mor table.row-sortable tr td.dragHandle{width:18px;}
 .mor table.row-sortable tr.tDnD_whileDrag th,
 .mor table.row-sortable tr.tDnD_whileDrag td{color:#fff; text-shadow:#000 0 -1px 0;}
-.mor table.row-sortable tr.tDnD_whileDrag td.dragHandle span{opacity:.3;}
+
 
 /* =cloneable Cloneable tables allow the user to add as many rows as nessecary
 ------------------------------------------------------------------------------*/
-
-table.cloneable .add{display:block; padding:7px; text-align:center;}
+.mor table.cloneable{
+	border-bottom:1px solid rgb(167,182,191);
+}
+.mor table.cloneable + .actions{
+	background:#fff;
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.1));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.1)));
+}
+.mor table.cloneable + .actions:active{background:#fff;}
+.mor table.cloneable + .actions .add{
+	padding-top:27px;
+	width:100%;
+}

@@ -10,25 +10,29 @@
 	+ "&lt;/tr&gt;")
 }).NSM_UpdateInputsOnChange();</code></pre>
 	</div>
-	<table id="clone1" class="cloneable NSM_Stripeable">
+	<table id="clone1" class="data cloneable NSM_Stripeable">
 		<thead>
 			<tr>
 				<th scope="col">Order</th>
-				<th scope="col">Delete</th>
+				<th scope="col" style="width:18px">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
 		</tbody>
 	</table>
-	<button class="add">Add a row</a>
+	<div class="actions">
+		<span class="icon add">Add a row</span>
+	</div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
 	$("#NSM_Cloneable table").NSM_Cloneable({
-    cloneTemplate: $("<tr>"
-        + "<td><input type='text' name='clone1[][s_order]' value='' style='width:20px;' /></td>"
-		+ "<td><button class='delete' type='button'>Delete</span></td>"
-        + "</tr>")
+		addTrigger: function(){return $(this).next().find(".add")},
+		cloneTemplate: $("<tr>"
+			+ "<td><input type='text' name='clone1[][s_order]' value='' style='width:20px;' /></td>"
+			+ "<td><span class='icon delete' type='button'>Delete</span></td>"
+			+ "</tr>"
+		)
     })
 	.NSM_UpdateInputsOnChange();
 </script>

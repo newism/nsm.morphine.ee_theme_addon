@@ -7,7 +7,7 @@
  * @author			Leevi Graham <leevi@newism.com.au>
  * @link			http://github.com/newism/nsm.better_meta.ee_addon
  * @see				http://expressionengine.com/public_beta/docs/development/fieldtypes.html
- * @copyright Copyright (c) 2007-2009 Newism
+ * @copyright Copyright (c) 2007-2010 Newism
  * @license Commercial - please see LICENSE file included with this distribution
 *
 */
