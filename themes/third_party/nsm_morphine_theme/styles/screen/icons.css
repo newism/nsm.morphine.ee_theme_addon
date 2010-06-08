@@ -9,6 +9,6 @@
 	width:18px;
 }
 
-.icon.add{background-image:url('../../images/icons/morphine/add2.png');}
-.icon.delete{background-image:url('../../images/icons/morphine/delete2.png');}
-.icon.sort{background-image:url('../../images/icons/morphine/sort2.png'); cursor:move;}
+.icon.add{background-image:url('../../images/icons/morphine/add.png');}
+.icon.delete{background-image:url('../../images/icons/morphine/subtract.png');}
+.icon.sort{background-image:url('../../images/icons/morphine/drag-y.png'); cursor:move;}
