@@ -21,14 +21,11 @@ class Nsm_morphine_theme_acc
 		$EE =& get_instance();
 
 		$theme_folder_url = $EE->config->item('theme_folder_url');
-		
+
 		if (substr($theme_folder_url, -1) != '/')
 			$theme_folder_url .= '/';
 
-		if($theme = $EE->config->item('member_theme'))
-			$theme .= "/";
-
-		$theme_folder_url .= "cp_themes/" . $theme . "nsm_morphine/";
+		$theme_folder_url .= "third_party/nsm_morphine_theme/";
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
