@@ -1,0 +1,50 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Notes:		General and explict form styles for the site
+*
+* CONTENTS
+* ------------------------------------------------------------------------------
+* =form									General form styles
+* =form-search							Search form
+* =form-account-create					Create account form
+* =form-account-update					Edit account form
+* =form-account-login					Login
+* =form-account-forgot_password 		Forgot account password
+* =form-account-forgot_username 		Forgot account username
+* 
+*/
+
+/* =form
+------------------------------------------------------------------------------*/
+ form.mor{}
+	.mor fieldset{}
+
+		.mor legend{}
+
+		.mor fieldset > div{}
+		.mor fieldset .note{}
+
+		.mor label{font-weight:inherit!important; margin-right:10px;}
+		.mor label.checkbox,
+		.mor label.radio,
+		.mor div > label{}
+
+		.mor label.checkbox{display:block;}
+			.mor div > label{}
+
+        .mor input, .mor textarea{font-size:11px; font-family:inherit;}
+
+        .mor input{}
+        .mor input[type=checkbox],
+        .mor input[type=radio]{margin-right:3px;}
+        .mor input[type=text]{width:95%; padding:5px;}
+        input.hasDatePicker{width:100px;}
+
+        .mor textarea{height:100px; width:95%;}
+
+        .mor input[type=text]:focus, 
+        .mor textarea:focus{outline:none;}
+
+	 form.mor .actions{}

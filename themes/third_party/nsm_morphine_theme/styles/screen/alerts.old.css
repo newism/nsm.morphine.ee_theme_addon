@@ -1,0 +1,49 @@
+/*
+* Author: 		Leevi Grahan
+* Contact:		leevi@newism.com.au
+* Version:		0.1
+* Updated:		04/02/2010
+* Notes:		Alert styles
+*
+* CONTENTS
+* -------------------------
+* =alerts 	Alerts
+* 
+*/
+
+/* =alerts Alerts and info
+------------------------------------------------------------------------------*/
+.mor .alert{
+    background:#fff;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(255,255,255,.5);
+    border-top-color:rgba(255,255,255,.9);
+    color:#555;
+	display:block;
+    font-size:11px;
+    list-style-type:none;
+    line-height:1.5em;
+    margin:0 0 10px 0;
+    padding:7px 10px;
+    -webkit-box-shadow:0 0px 2px rgba(0,0,0,.2);
+    background-image:-moz-linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0));
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+    text-shadow:0 1px 0 #fff;
+}
+
+.mor .alert > :first-child{margin-top:0 !important;}
+.mor .alert > :last-child{margin-bottom:0 !important;}
+
+.mor .alert .info, .mor .alert .help, .mor .alert .success, .mor .alert .error{color:inherit;}
+.mor .alert .info{}
+.mor .alert .success{}
+.mor .alert .error{}
+
+.mor .alert.info{background-color:#fffcbf;}
+.mor .alert.help{background-color:#ccdded;}
+.mor .alert.success{background-color:#d0ffbb;}
+.mor .alert.error{background-color:#ffcbbf;}
+
+.mor .tg .alert{border-left-width:0; border-right-width:0; border-bottom-width:0; -webkit-box-shadow:none; margin:0;}
+.mor .tg .alert.info{border-color:#e4df89;}
