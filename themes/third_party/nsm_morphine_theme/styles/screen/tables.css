@@ -97,6 +97,7 @@ Tables and Table groups
 	background-color:#fffcbf;
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	border-top:1px dotted #e5e3ac;
 	font-size:11px;
 	padding:10px;
 }

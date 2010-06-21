@@ -30,6 +30,7 @@
 		.mor label.checkbox,
 		.mor label.radio,
 		.mor div > label{}
+		.mor label:hover{font-weight:bold!important; cursor:pointer;}
 
 		.mor label.checkbox{display:block;}
 			.mor div > label{}

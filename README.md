@@ -10,7 +10,7 @@ Installation & Activation
 
 1. Download the master branch and extract the zip to your desktop. 
 2. Rename the folder to `nsm_morphine_theme` and drop it in the `/system/expressionengine/thirdparty/` directory of your ExpressionEngine install
-4. Move, copy or symlink `/themes/cp_themes/default/nsm_morphine` into `/themes/cp_themes/default/`
+4. Move, copy or symlink `/themes/third_party/nsm_morphine` into `/themes/third_party/`
 5. Activate the accessory for all pages and all member groups
 
 For developers
