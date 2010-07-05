@@ -9,9 +9,9 @@
 class Nsm_morphine_theme_upd
 {
 	public $version = '2.0.0';
-	static $has_cp_backend = TRUE;
-	static $has_publish_fields = FALSE;
-	static $has_tabs = FALSE;
+	private $has_cp_backend = FALSE;
+	private $has_publish_fields = FALSE;
+	private $has_tabs = FALSE;
 	private $tabs = array("NSM Morphine Theme" => array(
 		"NSM Morphine theme tables" => array(
 			'visible'		=> 'true',
@@ -39,8 +39,8 @@ class Nsm_morphine_theme_upd
 		$data = array(
 			'module_name' => substr(__CLASS__, 0, -4),
 			'module_version' => $this->version,
-			'has_cp_backend' => (self::$has_cp_backend) ? "y" : "n",
-			'has_publish_fields' => (self::$has_publish_fields) ? "y" : "n"
+			'has_cp_backend' => ($this->has_cp_backend) ? "y" : "n",
+			'has_publish_fields' => ($this->has_publish_fields) ? "y" : "n"
 		);
 		$this->EE->db->insert('modules', $data);
 
