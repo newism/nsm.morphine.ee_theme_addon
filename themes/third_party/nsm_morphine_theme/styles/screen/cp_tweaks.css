@@ -46,7 +46,6 @@
 #accessoryTabs{
     background:#ecf1f4;
     border-top:1px solid #d1d5de;
-    overflow:auto;
     margin:0;
     padding:0 25px;
 }

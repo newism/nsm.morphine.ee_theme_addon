@@ -20,7 +20,10 @@ article,header,footer,section,figure{display:block;}
 /* =utils Utility classes
 ------------------------------------------------------------------------------*/
 .sr{position:absolute; top:-99999px; left:-99999px;}
-.clearfix:after{
+.clearfix:after,
+#accessoryTabs:after,
+ul.fourCol:after,
+ul.fiveCol:after{
 	visibility: hidden;
 	display: block;
 	font-size: 0;

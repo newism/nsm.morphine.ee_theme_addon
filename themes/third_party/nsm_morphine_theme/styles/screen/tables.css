@@ -90,7 +90,8 @@ Tables and Table groups
 }
 
 .mor .tg h2 + h3{border-top:0;}
-
+.mor .tg ul, .mor .tg ol{margin:15px 0 0 30px; list-style-type:disc;}
+.mor .tg ol{list-style-type:alpha;}
 .mor .tg .menu{margin:0;}
 
 .mor .tg .info{
