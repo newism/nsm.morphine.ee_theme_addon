@@ -13,7 +13,7 @@
 
 /* =alerts Alerts and info
 ------------------------------------------------------------------------------
-.mor .msg{
+.mor .alert{
     background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
     border:1px solid rgb(208, 215, 223);
     font-size:12px;
@@ -24,16 +24,16 @@
     padding:5px 10px;
     text-shadow: 0 1px 0 rgba(255,255,255,.8);
 }
-._mor .msg{position:fixed; top:0; right:0; left:0;}
-.mor .msg > :first-child{margin-top:0 !important;}
-.mor .msg > :last-child{margin-bottom:0 !important;}
+._mor .alert{position:fixed; top:0; right:0; left:0;}
+.mor .alert > :first-child{margin-top:0 !important;}
+.mor .alert > :last-child{margin-bottom:0 !important;}
 
-.mor .msg .info{color:#d3ae02;}
-.mor .msg .help{color:#00538a;}
-.mor .msg .success{color:#598527;}
-.mor .msg .error{color:#9e0b0f;}
+.mor .alert .info{color:#d3ae02;}
+.mor .alert .help{color:#00538a;}
+.mor .alert .success{color:#598527;}
+.mor .alert .error{color:#9e0b0f;}
 
-.mor .msg.info{
+.mor .alert.info{
     color:#000;
     background-image:-webkit-gradient(linear, left top, left bottom, from(#ffe749), to(#edc301));
     background-image:-moz-linear-gradient(top, #ffe749, #edc301);
@@ -43,7 +43,7 @@
     text-shadow: 0 1px 0 rgba(255,255,255,.8);
     
 }
-.mor .msg.help{
+.mor .alert.help{
     background-image:-webkit-gradient(linear, left top, left bottom, from(#0072bc), to(#00538a));
     background-image:-moz-linear-gradient(top, #0072bc, #00538a);
     border:1px solid #00538a;
@@ -51,7 +51,7 @@
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,1);
 }
-.mor .msg.success{
+.mor .alert.success{
     background-image:-webkit-gradient(linear, left top, left bottom, from(#7bb835), to(#598527));
     background-image:-moz-linear-gradient(top, #7bb835, #598527);
     border:1px solid #598527;
@@ -59,8 +59,8 @@
     color:#fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,.8);
 }
-.mor .msg.success{}
-.mor .msg.error{
+.mor .alert.success{}
+.mor .alert.error{
     background-image:-webkit-gradient(linear, left top, left bottom, from(#d10f15), to(#9e0b0f));
     background-image:-moz-linear-gradient(top, #d10f15, #9e0b0f);
     border:1px solid #9e0b0f;
@@ -69,28 +69,56 @@
     text-shadow: 0 -1px 0 rgba(0,0,0,.8);
 }
 
-.mor .tg .msg{border-top:1px dotted #d3dadf;}
+.mor .tg .alert{border-top:1px dotted #d3dadf;}
 */
 
-.mor .msg{
-	font-size:11px;
+.mor .alert{
+	background:#fff;
+	font-size:12px;
 	line-height:1.5em;
 	list-style-type:none;
 	margin:0 0 1.2em 0;
-	padding:5px 10px;
+	padding:7px 10px;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	color:inherit;
+	border:1px solid #ccc;
+	-webkit-box-shadow:0 1px 0 rgba(255,255,255,.5);
+	-moz-box-shadow:0 1px 0 rgba(255,255,255,.5);
 }
-.mor .msg > :first-child{margin-top:0 !important;}
-.mor .msg > :last-child{margin-bottom:0 !important;}
+.mor .alert > :first-child{margin-top:0 !important;}
+.mor .alert > :last-child{margin-bottom:0 !important;}
 
 /* General information for the user before or after they tak an action */
-.mor .msg.info{}
+.mor .alert.info{
+	background-color:#fffcbf;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	border-color:#e5e3ac;
+}
 /* An important alert that may affect an action. Eg: a setting is disallowing them to do something */
-.mor .msg.alert{}
+.mor .alert.warning{
+	background-color:#fff4e3;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	border-color:#ebe2b4;
+    color:#ae4e00;
+}
 /* User has completed an action successfully */
-.mor .msg.success{}
+.mor .alert.success{
+	background-color:#efffd6;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
+	border-color:#d7e5c1;
+	color:#618c40;
+}
 /* User has made an error due to an action */
-.mor .msg.error{}
+.mor .alert.error{
+	background-color:#fff0f0;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+	border-color:#e5d8d8;
+	color:#9e0b0f;
+}
 
-.mor .tg .msg{border-left-width:0; border-right-width:0; border-bottom-width:0; padding-top:10px; padding-bottom:10px; -webkit-box-shadow:none; margin:0;}
-.mor .tg .msg.info{border-color:#e4df89;}
+.mor .tg .alert{border-left-width:0; border-right-width:0; border-top-width:0;-webkit-box-shadow:none; margin:0;}
+.mor .tg .alert.info{border-color:#e4df89;}
