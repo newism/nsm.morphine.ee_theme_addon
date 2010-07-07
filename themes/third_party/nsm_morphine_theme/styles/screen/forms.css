@@ -35,17 +35,17 @@
 		.mor label.checkbox{display:block;}
 			.mor div > label{}
 
-        .mor input, .mor textarea{font-size:11px; font-family:inherit; line-height:1.3em;}
+        .mor input, .mor textarea{font-size:11px; font-family:inherit; line-height:1.3em; padding:5px!important; border-top-color:#9fa8aa; -webkit-box-shadow:0 1px 0 #fff; -moz-box-shadow:0 1px 0 #fff;}
 
         .mor input{}
         .mor input[type=checkbox],
         .mor input[type=radio]{margin-right:3px;}
-        .mor input[type=text]{width:95%; padding:5px;}
+        .mor input[type=text]{width:100%; padding:5px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
         input.hasDatePicker{width:100px;}
 
-        .mor textarea{height:100px; width:95%;}
+        .mor textarea{height:100px; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
 
         .mor input[type=text]:focus, 
-        .mor textarea:focus{outline:none;}
+        .mor textarea:focus{outline:none; border:1px solid #323F47;}
 
 	 form.mor .actions{}
