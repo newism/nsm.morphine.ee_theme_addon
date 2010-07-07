@@ -1,9 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * Control Panel
+ * NSM Morphine Theme CP 
  *
- * @package NSMMorphineTheme
+ * @package			NsmMorphineTheme
+ * @version			1.0.0
+ * @author			Leevi Graham <http://leevigraham.com>
+ * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
+ * @license 		Commercial - please see LICENSE file included with this distribution
+ * @link			http://expressionengine-addons.com/nsm-morphine-theme
+ * @see				http://expressionengine.com/public_beta/docs/development/modules.html#control_panel_file
  */
 class Nsm_morphine_theme_mcp
 {

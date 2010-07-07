@@ -1,4 +1,15 @@
 <?php
+/**
+ * NSM Morphine Theme Language File
+ *
+ * @package			NsmMorphineTheme
+ * @version			1.0.0
+ * @author			Leevi Graham <http://leevigraham.com>
+ * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
+ * @license 		Commercial - please see LICENSE file included with this distribution
+ * @link			http://expressionengine-addons.com/nsm-morphine-theme
+ * @see				http://expressionengine.com/public_beta/docs/development/modules.html#lang_file
+ */
 
 $lang = array(
 	'nsm_morphine_theme' => 'NSM Morphine Theme',

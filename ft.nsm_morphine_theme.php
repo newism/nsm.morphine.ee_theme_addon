@@ -1,16 +1,17 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * @package			NSM
- * @subpackage		MorphineTheme
- * @version			2.0.0
- * @author			Leevi Graham <leevi@newism.com.au>
- * @link			http://github.com/newism/nsm.better_meta.ee_addon
+ * NSM Morphine Theme Fieldtype
+ *
+ * @package			NsmMorphineTheme
+ * @version			1.0.0
+ * @author			Leevi Graham <http://leevigraham.com>
+ * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
+ * @license 		Commercial - please see LICENSE file included with this distribution
+ * @link			http://expressionengine-addons.com/nsm-example-addon
  * @see				http://expressionengine.com/public_beta/docs/development/fieldtypes.html
- * @copyright Copyright (c) 2007-2010 Newism
- * @license Commercial - please see LICENSE file included with this distribution
-*
-*/
+ */
+
 class Nsm_morphine_theme_ft extends EE_Fieldtype
 {
 	/**
@@ -21,7 +22,7 @@ class Nsm_morphine_theme_ft extends EE_Fieldtype
 	 */
 	public $info = array(
 		'name'		=> 'NSM Morphine Theme',
-		'version'	=> '2.0.0'
+		'version'	=> '1.0.0'
 	);
 
 	/**

@@ -1,10 +1,21 @@
 <?php
+/**
+ * NSM Morphine Theme Accessory
+ *
+ * @package			NsmMorphineTheme
+ * @version			1.0.0
+ * @author			Leevi Graham <http://leevigraham.com> - Technical Director, Newism
+ * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
+ * @license 		Commercial - please see LICENSE file included with this distribution
+ * @link			http://expressionengine-addons.com/nsm-morphine-theme
+ * @see				http://expressionengine.com/public_beta/docs/development/accessories.html
+ */
 
 class Nsm_morphine_theme_acc 
 {
 	var $name	 		= 'NSM Morphine theme';
 	var $id	 			= 'nsm_morphine_theme';
-	var $version	 	= '0.1.0';
+	var $version	 	= '1.0.0';
 	var $description	= 'Accessory for NSM Morphine theme.';
 	var $sections	 	= array();
 

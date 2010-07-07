@@ -94,16 +94,9 @@ Tables and Table groups
 .mor .tg ol{list-style-type:alpha;}
 .mor .tg .menu{margin:0;}
 
-/*.mor .tg .info{
-	background-color:#fffcbf;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
-	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
-	border-top:1px dotted #e5e3ac;
-	font-size:11px;
-}
-*/
 .mor .tg .info :first-child{margin-top:0!important;}
 .mor .tg .info :last-child{margin-bottom:0!important;}
+
 /* =table
 ------------------------------------------------------------------------------*/
 

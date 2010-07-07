@@ -74,10 +74,11 @@
 
 .mor .alert{
 	background:#fff;
-	font-size:12px;
+	color:#333!important;
+	font-size:11px;
 	line-height:1.5em;
 	list-style-type:none;
-	margin:0 0 1.2em 0;
+	margin:9px 0;
 	padding:7px 10px;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8);
 	color:inherit;
@@ -102,7 +103,6 @@
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
 	border-color:#ebe2b4;
-    color:#ae4e00;
 }
 /* User has completed an action successfully */
 .mor .alert.success{
@@ -110,7 +110,6 @@
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
 	border-color:#d7e5c1;
-	color:#618c40;
 }
 /* User has made an error due to an action */
 .mor .alert.error{
@@ -118,8 +117,6 @@
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
 	border-color:#e5d8d8;
-	color:#9e0b0f;
 }
 
 .mor .tg .alert{font-size:11px; border-left-width:0; border-right-width:0; border-bottom-width:0; margin:0; border-top-style: dotted;}
-.mor .tg .alert.info{border-color:#e4df89;}
