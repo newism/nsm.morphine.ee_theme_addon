@@ -81,10 +81,11 @@
 	padding:7px 10px;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8);
 	color:inherit;
-	border:1px solid #ccc;
+	border:1px solid #c8d9e3;
 	-webkit-box-shadow:0 1px 0 rgba(255,255,255,.5);
 	-moz-box-shadow:0 1px 0 rgba(255,255,255,.5);
 }
+
 .mor .alert > :first-child{margin-top:0 !important;}
 .mor .alert > :last-child{margin-bottom:0 !important;}
 
@@ -120,5 +121,5 @@
 	color:#9e0b0f;
 }
 
-.mor .tg .alert{border-left-width:0; border-right-width:0; border-top-width:0;-webkit-box-shadow:none; margin:0;}
+.mor .tg .alert{font-size:11px; border-left-width:0; border-right-width:0; border-bottom-width:0; margin:0; border-top-style: dotted;}
 .mor .tg .alert.info{border-color:#e4df89;}
