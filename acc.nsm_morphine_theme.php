@@ -40,7 +40,7 @@ class Nsm_morphine_theme_acc
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
-		$js_libs = array('metadata', 'NSM_MagicCheckboxes', 'NSM_Stripeable',
+		$js_libs = array('NSM_MagicCheckboxes', 'NSM_Stripeable',
 		                'NSM_UpdateInputsOnChange', 'NSM_Cloneable', 'NSM_Navigation',
 		                'tablednd.0.5', 'behaviours');
 
