@@ -29,8 +29,17 @@ h4{margin:18px 0;  font-size:18px;}
 h5{margin:18px 0;  font-size:14px;}
 h6{margin:18px 0;  font-size:12px;}*/
 
-.mor{line-height: 1.2;}
-.mor p{margin:1.5em 0 !important;}
+.mor{font-size:12px;}
+
+.mor h1{color:#323f47; border-bottom:1px solid #323f47; font-size:20px; margin:18px 0 18px 0; padding-bottom:8px;}
+.mor h2{font-size:18px; border-bottom:1px dotted #5F6C74; margin:27px 0 18px 0; padding-bottom:8px;}
+.mor h3{font-size:16px; margin:18px 0 18px 0;}
+.mor h4{font-size:14px; margin:18px 0 18px 0;}
+.mor h5{font-size:12px; margin:18px 0 18px 0;}
+.mor h6{font-size:12px; margin:18px 0 18px 0;}
+
+.mor p, .mor ol, .mor ul, .mor dl, .mor blockquote{margin-bottom:18px!important; margin-top:18px!important;}
+.mor ol, .mor ul, .mor dl, .mor blockquote{margin-left:2em;}
 
 .tag-list {margin-top:18px;}
 .tag-list li{width:20%; display:inline-block;}

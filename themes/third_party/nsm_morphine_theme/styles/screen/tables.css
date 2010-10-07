@@ -55,11 +55,12 @@ Tables and Table groups
     margin-bottom:18px;
     -webkit-box-shadow:#fff 0 1px 0;
 }
+.accessorySection .mor .tg{-webkit-box-shadow:none;}
 .mor .tg > :first-child{border-top:0 !important;}
 .mor .tg h2{
     background:#323f47;
     background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0))),
-        -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.1)), to(rgba(72,102,118,0)));
+        			 -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.1)), to(rgba(72,102,118,0)));
     background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
     border-left-width:0;
     border-right-width:0;
@@ -71,7 +72,7 @@ Tables and Table groups
     margin:-4px -1px 0 -1px;
     padding:8px 10px;
     position:relative;
-    text-transform:uppercase;
+    _text-transform:uppercase;
     -webkit-border-top-left-radius:4px;
     -webkit-border-top-right-radius:4px;
     -moz-border-radius:4px 4px 0 0;
@@ -86,16 +87,18 @@ Tables and Table groups
     font-size:14px !important;
     margin:0 !important;
     padding:10px !important;
-    text-transform:uppercase;
+    _text-transform:uppercase;
 }
 
 .mor .tg h2 + h3{border-top:0;}
 .mor .tg ul, .mor .tg ol{margin:15px 0 0 30px; list-style-type:disc;}
 .mor .tg ol{list-style-type:alpha;}
-.mor .tg .menu{margin:0;}
+.mor .tg .menu{margin:0!important;}
 
 .mor .tg .info :first-child{margin-top:0!important;}
 .mor .tg .info :last-child{margin-bottom:0!important;}
+
+.mor .tg .actions{border-top:3px double #a7b6bf; padding:9px;}
 
 /* =table
 ------------------------------------------------------------------------------*/
@@ -113,6 +116,7 @@ Tables and Table groups
         display:block;
         font-weight:normal;
         font-size:10px;
+		line-height:normal;
         margin-top:3px;
     }
     .mor table tr{}
@@ -209,8 +213,10 @@ Tables and Table groups
 }
 .mor table.cloneable + .actions{
 	background:#fff;
+	border-top:0;
 	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.1));
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.1)));
+	padding:0;
 }
 .mor table.cloneable + .actions:active{background:#fff;}
 .mor table.cloneable + .actions .add{

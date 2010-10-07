@@ -14,6 +14,14 @@
 	<a class="btn delete">A delete action button</a>
 </p>
 
+<h3><code>&lt;input&gt;</code> elements</h3>
+<p>These should all look like submit buttons bu they have varying classes.</p>
+<p>
+	<input type="submit" value="Submit" />
+	<input type="submit" value="Submit" class="submit" />
+	<input type="submit" value="Submit" class="btn submit" />
+</p>
+
 <h3>Icons: <code>.icon</code></h3>
 <a href="#" class="icon add">Add</a>
 <a href="#" class="icon delete">Delete</a>

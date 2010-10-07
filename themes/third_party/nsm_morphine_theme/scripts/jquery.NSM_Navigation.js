@@ -22,4 +22,3 @@ $(document).ready(function() {
 		$triggers.eq(0).click();
 	});
 });
-

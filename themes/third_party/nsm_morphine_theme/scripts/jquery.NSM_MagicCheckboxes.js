@@ -63,7 +63,7 @@
 		event: 'change',
 		triggerSelector: ':checkbox.NSM_MagicCheckboxesTrigger',
 		targetSelector: ':checkbox[name^=toggle]',
-		targetParentSelector: 'tr',
+		targetParentSelector: 'tr'
 	};
 
 })(jQuery);

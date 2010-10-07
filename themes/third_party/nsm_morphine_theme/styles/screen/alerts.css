@@ -75,48 +75,52 @@
 .mor .alert{
 	background:#fff;
 	color:#333!important;
-	font-size:11px;
+	font-size:12px;
 	line-height:1.5em;
 	list-style-type:none;
 	margin:9px 0;
 	padding:7px 10px;
-	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
 	color:inherit;
 	border:1px solid #c8d9e3;
 	-webkit-box-shadow:0 1px 0 rgba(255,255,255,.5);
 	-moz-box-shadow:0 1px 0 rgba(255,255,255,.5);
 }
-
+.mor .tg h2 + .alert{border-top:0;}
+.mor td.alert{-webkit-box-shadow:none; -moz-box-shadow:none;}
 .mor .alert > :first-child{margin-top:0 !important;}
 .mor .alert > :last-child{margin-bottom:0 !important;}
 
 /* General information for the user before or after they tak an action */
 .mor .alert.info{
 	background-color:#fffcbf;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .3)), to(rgba(255, 255, 255, 0)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
-	border-color:#e5e3ac;
-}
-/* An important alert that may affect an action. Eg: a setting is disallowing them to do something */
-.mor .alert.warning{
-	background-color:#fff4e3;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
-	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
-	border-color:#ebe2b4;
+	border-color:#e1e093;
 }
 /* User has completed an action successfully */
 .mor .alert.success{
-	background-color:#efffd6;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background-color:#009e00;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .85)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
-	border-color:#d7e5c1;
+	border-color:#b4d0a6;
 }
 /* User has made an error due to an action */
 .mor .alert.error{
-	background-color:#fff0f0;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
+	background:#ff0000;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .85)));
 	background-image:-moz-linear-gradient(top, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
-	border-color:#e5d8d8;
+	border-color:#deb7b7;
+	color:#990000;
 }
+.mor .alert .error{color:#990000;}
 
-.mor .tg .alert{font-size:11px; border-left-width:0; border-right-width:0; border-bottom-width:0; margin:0; border-top-style: dotted;}
+.mor .tg .alert{
+	border-left-width:0; 
+	border-right-width:0; 
+	border-bottom-width:0; 
+	border-top-style: dotted;
+	font-size:11px;
+	margin:0;
+	-webkit-box-shadow:none;
+}

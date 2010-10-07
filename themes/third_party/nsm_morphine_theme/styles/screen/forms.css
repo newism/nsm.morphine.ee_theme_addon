@@ -1,5 +1,5 @@
 /*
-* Author: 		Leevi Grahan
+* Author:		Leevi Grahan
 * Contact:		leevi@newism.com.au
 * Version:		0.1
 * Notes:		General and explict form styles for the site
@@ -11,14 +11,15 @@
 * =form-account-create					Create account form
 * =form-account-update					Edit account form
 * =form-account-login					Login
-* =form-account-forgot_password 		Forgot account password
-* =form-account-forgot_username 		Forgot account username
+* =form-account-forgot_password			Forgot account password
+* =form-account-forgot_username			Forgot account username
 * 
 */
 
 /* =form
 ------------------------------------------------------------------------------*/
  form.mor{}
+	form.mor .actions{}
 	.mor fieldset{}
 
 		.mor legend{}
@@ -26,26 +27,26 @@
 		.mor fieldset > div{}
 		.mor fieldset .note{}
 
-		.mor label{font-weight:inherit!important; margin-right:10px;}
+		.mor label{font-weight:inherit!important; margin-right:5px;}
 		.mor label.checkbox,
 		.mor label.radio,
 		.mor div > label{}
-		.mor label:hover{font-weight:bold!important; cursor:pointer;}
 
 		.mor label.checkbox{display:block;}
 			.mor div > label{}
 
-        .mor input[type="text"], .mor textarea{font-size:11px; font-family:inherit; line-height:1.3em; padding:5px!important; border-top-color:#9fa8aa; -webkit-box-shadow:0 1px 0 #fff; -moz-box-shadow:0 1px 0 #fff;}
+		.mor input[type="text"], .mor textarea{font-size:11px; font-family:inherit; line-height:1.3em; padding:5px!important; border-top-color:#9fa8aa; -webkit-box-shadow:0 1px 0 #fff; -moz-box-shadow:0 1px 0 #fff;}
 
-        .mor input{}
-        .mor input[type=checkbox],
-        .mor input[type=radio]{margin-right:3px;}
-        .mor input[type=text]{width:100%; padding:5px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
-        input.hasDatePicker{width:100px;}
+		.mor input{}
+		.mor input[type=checkbox],
+		.mor input[type=radio]{margin-right:3px;}
+		.mor input[type=text]{width:100%; padding:5px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+		
+		.mor input.hasDatePicker{width:100px;}
 
-        .mor textarea{height:100px; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+		.mor textarea{height:100px; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
 
-        .mor input[type=text]:focus, 
-        .mor textarea:focus{outline:none; border:1px solid #323F47;}
+		.mor input[type=text]:focus, 
+		.mor textarea:focus{outline:none; border:1px solid #323F47;}
 
-	 form.mor .actions{}
+		.mor .fg{margin-right:10px;}

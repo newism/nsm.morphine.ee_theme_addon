@@ -3,7 +3,7 @@
  * NSM Morphine Theme Accessory
  *
  * @package			NsmMorphineTheme
- * @version			1.0.0
+ * @version			1.0.1
  * @author			Leevi Graham <http://leevigraham.com> - Technical Director, Newism
  * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
@@ -15,7 +15,7 @@ class Nsm_morphine_theme_acc
 {
 	var $name	 		= 'NSM Morphine theme';
 	var $id	 			= 'nsm_morphine_theme';
-	var $version	 	= '1.0.0';
+	var $version	 	= '1.0.1';
 	var $description	= 'Accessory for NSM Morphine theme.';
 	var $sections	 	= array();
 
@@ -40,9 +40,11 @@ class Nsm_morphine_theme_acc
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
-		$js_libs = array('NSM_MagicCheckboxes', 'NSM_Stripeable',
-		                'NSM_UpdateInputsOnChange', 'NSM_Cloneable', 'NSM_Navigation',
-		                'tablednd.0.5', 'behaviours');
+		$js_libs = array(
+						'NSM_MagicCheckboxes', 'NSM_Stripeable', 'NSM_UpdateInputsOnChange',
+						'NSM_Cloneable', 'NSM_Navigation', 'NSM_AttributeAssigner',
+						'tablednd.0.5', 'behaviours'
+		);
 
 		foreach ($js_libs as $lib)
     	    $EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/jquery.'.$lib.'.js"></script>');

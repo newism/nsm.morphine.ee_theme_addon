@@ -18,20 +18,6 @@ button{height:27px;}
 button:hover, .btn:hover{}
 button:active, .btn:active{background-image:none!important; position:relative; top:1px;}
 
-/* standard buttons */
-button, .btn{
-	background-color:#fafbfc;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fafbfc), to(#c8d2d7)); 
-	background-image:-moz-linear-gradient(top, #fafbfc, #c8d2d7);
-	border:1px solid #92a5b0;
-	color:#535d63;
-	text-shadow:0 1px 0 #fff;
-	position:relative;
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
-}
-
-
 .tg table + button, .tg table + .btn{
 	width:100%;
 	border-width:1px 0;
