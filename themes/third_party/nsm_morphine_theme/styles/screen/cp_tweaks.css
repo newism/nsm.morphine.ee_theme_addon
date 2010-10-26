@@ -177,7 +177,9 @@ input[type="submit"],
 .rightNav a.submit:hover,
 .btn,
 #mainContent .formArea .formHeading .newTemplate a,
-.cp_button a{
+.cp_button a,
+.cp_button a:link,
+.cp_button a:visited{
 
 	-moz-appearance:none;
 	-moz-border-radius:3px!important;
