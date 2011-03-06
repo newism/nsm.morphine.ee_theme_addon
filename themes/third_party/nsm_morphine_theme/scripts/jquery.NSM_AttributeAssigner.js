@@ -45,7 +45,9 @@
 				$(obj.cf_data[channel_id]).each(function(index) {
 					options[index + 1] = document.createElement("OPTION");
 					options[index + 1].value = obj.cf_data[channel_id][index]['field_id'];
-					options[index + 1].text = obj.cf_data[channel_id][index]['field_label'] + " - (Field ID: " + obj.cf_data[channel_id][index]['field_id'] + ")";
+					options[index + 1].text = obj.cf_data[channel_id][index]['field_label'];
+					options[index + 1].setAttribute("data-field-id", obj.cf_data[channel_id][index]['field_id']);
+					options[index + 1].setAttribute("data-field-type", obj.cf_data[channel_id][index]['field_type']);
 				});
 				obj.dom.$targets.html(options).fadeIn();
 			}
