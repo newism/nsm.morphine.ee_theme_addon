@@ -38,7 +38,7 @@ h6{margin:18px 0;  font-size:12px;}*/
 .mor h5{font-size:12px; margin:18px 0 18px 0;}
 .mor h6{font-size:12px; margin:18px 0 18px 0;}
 
-.mor p, .mor ol, .mor ul, .mor dl, .mor blockquote{margin-bottom:18px!important; margin-top:18px!important;}
+.mor p, .mor ol, .mor ul, .mor dl, .mor blockquote{}
 .mor ol, .mor ul, .mor dl, .mor blockquote{margin-left:2em;}
 
 .tag-list {margin-top:18px;}
