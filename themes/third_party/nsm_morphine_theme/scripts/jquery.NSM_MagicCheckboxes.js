@@ -25,36 +25,42 @@
 			var $self = $(this);
 
 			// grab all the targets
-			var $targets = ($.isFunction(e.data.opts.targetSelector))
+			var $triggers = ($.isFunction(e.data.opts.targetSelector))
 							? e.data.opts.targetSelector.call(e.data.dom.$container)
 							: $(e.data.opts.targetSelector, e.data.dom.$container);
 
 			// grab all the target parents
 			var $targetParents = ($.isFunction(e.data.opts.targetParentSelector))
-								? e.data.opts.targetParentSelector.call($targets)
-								: $targets.parentsUntil(e.data.opts.targetParentSelector);
+								? e.data.opts.targetParentSelector.call($triggers)
+								: $triggers.parents(e.data.opts.targetParentSelector);
+
+			console.log($targetParents);
 
 			if($self.is(':checked'))
 			{
 				$targetParents.addClass('selected');
-				$targets.attr('checked', 'checked');
+				$triggers.attr('checked', 'checked');
 			} else {
 				$targetParents.removeClass('selected');
-				$targets.removeAttr('checked');
+				$triggers.removeAttr('checked');
 			}
 		},
+
 		_check_row: function(e){
-			var $eTarget = $(e.target);
-			if(! $eTarget.is(e.data.opts.targetSelector)) return;
-			var $parent = $eTarget.parentsUntil(e.data.opts.targetParentSelector);
-			if($(this).is(':checked'))
+			var $trigger = $(e.target);
+			if(! $trigger.is(e.data.opts.targetSelector)) return;
+
+			var $targetParents = ($.isFunction(e.data.opts.targetParentSelector))
+								? e.data.opts.targetParentSelector.call($trigger)
+								: $trigger.parents(e.data.opts.targetParentSelector);
+
+			if($trigger.is(':checked'))
 			{
-				$parent.addClass('selected');
-				$(this).attr('checked', 'checked');
+				$targetParents.addClass('selected');
+				$trigger.attr('checked', 'checked');
 			} else {
-				$parent.removeClass('selected');
-				e.data.dom.$triggers.removeAttr('checked');
-				$(this).removeAttr('checked');
+				$targetParents.removeClass('selected');
+				$trigger.removeAttr('checked');
 			}
 		}
 	};
@@ -63,7 +69,8 @@
 		event: 'change',
 		triggerSelector: ':checkbox.NSM_MagicCheckboxesTrigger',
 		targetSelector: ':checkbox[name^=toggle]',
-		targetParentSelector: 'tr'
+		// targetParentSelector: function(el){ return $(this).parent().parent();  }
+		targetParentSelector: "tr"
 	};
 
 })(jQuery);
