@@ -34,8 +34,6 @@
 								? e.data.opts.targetParentSelector.call($triggers)
 								: $triggers.parents(e.data.opts.targetParentSelector);
 
-			console.log($targetParents);
-
 			if($self.is(':checked'))
 			{
 				$targetParents.addClass('selected');

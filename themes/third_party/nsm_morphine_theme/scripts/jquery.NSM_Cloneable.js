@@ -4,7 +4,7 @@
 		var opts = $.extend({}, $.fn.NSM_Cloneable.defaults, options);
 		if(!opts.cloneTemplate)
 		{
-			console.log("No clone template provided in parameters");
+			// console.log("No clone template provided in parameters");
 			return this;
 		}
 
