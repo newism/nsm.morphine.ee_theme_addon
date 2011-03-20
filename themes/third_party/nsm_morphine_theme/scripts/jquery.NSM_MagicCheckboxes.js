@@ -59,6 +59,7 @@
 			} else {
 				$targetParents.removeClass('selected');
 				$trigger.removeAttr('checked');
+				e.data.dom.$triggers.removeAttr('checked');
 			}
 		}
 	};
@@ -67,7 +68,6 @@
 		event: 'change',
 		triggerSelector: ':checkbox.NSM_MagicCheckboxesTrigger',
 		targetSelector: ':checkbox[name^=toggle]',
-		// targetParentSelector: function(el){ return $(this).parent().parent();  }
 		targetParentSelector: "tr"
 	};
 
