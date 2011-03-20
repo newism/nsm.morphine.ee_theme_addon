@@ -1,9 +1,9 @@
+@charset "UTF-8";
 /*
-* Author: 		Leevi Grahan
-* Contact:		leevi@newism.com.au
-* Version:		0.1
-* Updated:		04/02/2010
-* Notes:		Alert styles
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: Alert styles
 *
 * CONTENTS
 * -------------------------
@@ -11,66 +11,8 @@
 * 
 */
 /* =alerts Alerts and info
-------------------------------------------------------------------------------
-.mor .alert{
-    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 0)));
-    border:1px solid rgb(208, 215, 223);
-    font-size:12px;
-    list-style-type:none;
-    line-height:1.5em;
-    margin:0 0 10px 0;
-    opacity:.9;
-    padding:5px 10px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.8);
-}
-._mor .alert{position:fixed; top:0; right:0; left:0;}
-.mor .alert > :first-child{margin-top:0 !important;}
-.mor .alert > :last-child{margin-bottom:0 !important;}
-
-.mor .alert .info{color:#d3ae02;}
-.mor .alert .help{color:#00538a;}
-.mor .alert .success{color:#598527;}
-.mor .alert .error{color:#9e0b0f;}
-
-.mor .alert.info{
-    color:#000;
-    background-image:-webkit-gradient(linear, left top, left bottom, from(#ffe749), to(#edc301));
-    background-image:-moz-linear-gradient(top, #ffe749, #edc301);
-    _background:#edc301;
-    border:1px solid #d3ae02;
-    border-bottom-color:#d3ae02;
-    text-shadow: 0 1px 0 rgba(255,255,255,.8);
-    
-}
-.mor .alert.help{
-    background-image:-webkit-gradient(linear, left top, left bottom, from(#0072bc), to(#00538a));
-    background-image:-moz-linear-gradient(top, #0072bc, #00538a);
-    border:1px solid #00538a;
-    border-bottom-color:#003457;
-    color:#fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,1);
-}
-.mor .alert.success{
-    background-image:-webkit-gradient(linear, left top, left bottom, from(#7bb835), to(#598527));
-    background-image:-moz-linear-gradient(top, #7bb835, #598527);
-    border:1px solid #598527;
-    border-bottom-color:#375218;
-    color:#fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.8);
-}
-.mor .alert.success{}
-.mor .alert.error{
-    background-image:-webkit-gradient(linear, left top, left bottom, from(#d10f15), to(#9e0b0f));
-    background-image:-moz-linear-gradient(top, #d10f15, #9e0b0f);
-    border:1px solid #9e0b0f;
-    border-bottom-color:#520608;
-    color:#fff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.8);
-}
-
-.mor .tg .alert{border-top:1px dotted #d3dadf;}
-*/
-/* line 75, ../../src/screen/alerts.scss */
+------------------------------------------------------------------------------ */
+/* line 19, ../../src/screen/alerts.scss */
 .mor .alert {
   background: #fff;
   color: inherit;
@@ -82,57 +24,76 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0; }
 
-/* line 89, ../../src/screen/alerts.scss */
+/* line 33, ../../src/screen/alerts.scss */
 .mor .tg h2 + .alert {
   border-top: 0; }
 
-/* line 90, ../../src/screen/alerts.scss */
+/* line 36, ../../src/screen/alerts.scss */
 .mor td.alert {
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none; }
+  -o-box-shadow: none;
+  box-shadow: none; }
 
-/* line 91, ../../src/screen/alerts.scss */
+/* line 39, ../../src/screen/alerts.scss */
 .mor .alert > :first-child {
   margin-top: 0 !important; }
 
-/* line 92, ../../src/screen/alerts.scss */
+/* line 42, ../../src/screen/alerts.scss */
 .mor .alert > :last-child {
   margin-bottom: 0 !important; }
 
+/* line 46, ../../src/screen/alerts.scss */
+.mor .tg .alert {
+  border-width: 0 0 1px 0;
+  margin: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
+
 /* General information for the user before or after they tak an action */
-/* line 95, ../../src/screen/alerts.scss */
+/* line 53, ../../src/screen/alerts.scss */
 .mor .alert.info {
   background-color: #fffcbf;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%); }
 
 /* User has completed an action successfully */
-/* line 101, ../../src/screen/alerts.scss */
+/* line 58, ../../src/screen/alerts.scss */
 .mor .alert.success {
-  background-color: #009e00;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.85)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
+  background-color: #74a92d;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%); }
 
-/* line 106, ../../src/screen/alerts.scss */
+/* line 62, ../../src/screen/alerts.scss */
 .mor .alert .success {
   color: #74a92d; }
 
 /* User has made an error due to an action */
-/* line 111, ../../src/screen/alerts.scss */
+/* line 67, ../../src/screen/alerts.scss */
 .mor .alert.error {
-  background: #ff0000;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.85)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
+  background: #a72226;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%); }
 
-/* line 116, ../../src/screen/alerts.scss */
+/* line 71, ../../src/screen/alerts.scss */
 .mor .alert .error {
   color: #a72226; }
 
-/* line 120, ../../src/screen/alerts.scss */
+/* line 75, ../../src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
-  -webkit-box-shadow: none; }
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
