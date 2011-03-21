@@ -12,7 +12,7 @@
 */
 /* =alerts Alerts and info
 ------------------------------------------------------------------------------ */
-/* line 19, ../../src/screen/alerts.scss */
+/* line 18, ../../src/screen/alerts.scss */
 .mor .alert {
   background: #fff;
   color: inherit;
@@ -29,26 +29,26 @@
   -o-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
   box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0; }
 
-/* line 33, ../../src/screen/alerts.scss */
+/* line 32, ../../src/screen/alerts.scss */
 .mor .tg h2 + .alert {
   border-top: 0; }
 
-/* line 36, ../../src/screen/alerts.scss */
+/* line 35, ../../src/screen/alerts.scss */
 .mor td.alert {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none; }
 
-/* line 39, ../../src/screen/alerts.scss */
+/* line 38, ../../src/screen/alerts.scss */
 .mor .alert > :first-child {
   margin-top: 0 !important; }
 
-/* line 42, ../../src/screen/alerts.scss */
+/* line 41, ../../src/screen/alerts.scss */
 .mor .alert > :last-child {
   margin-bottom: 0 !important; }
 
-/* line 46, ../../src/screen/alerts.scss */
+/* line 45, ../../src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
@@ -58,7 +58,7 @@
   box-shadow: none; }
 
 /* General information for the user before or after they tak an action */
-/* line 53, ../../src/screen/alerts.scss */
+/* line 52, ../../src/screen/alerts.scss */
 .mor .alert.info {
   background-color: #fffcbf;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
@@ -66,30 +66,30 @@
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%); }
 
 /* User has completed an action successfully */
-/* line 58, ../../src/screen/alerts.scss */
+/* line 57, ../../src/screen/alerts.scss */
 .mor .alert.success {
   background-color: #74a92d;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%); }
 
-/* line 62, ../../src/screen/alerts.scss */
+/* line 61, ../../src/screen/alerts.scss */
 .mor .alert .success {
   color: #74a92d; }
 
 /* User has made an error due to an action */
-/* line 67, ../../src/screen/alerts.scss */
+/* line 66, ../../src/screen/alerts.scss */
 .mor .alert.error {
   background: #a72226;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%); }
 
-/* line 71, ../../src/screen/alerts.scss */
+/* line 70, ../../src/screen/alerts.scss */
 .mor .alert .error {
   color: #a72226; }
 
-/* line 75, ../../src/screen/alerts.scss */
+/* line 74, ../../src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
