@@ -48,6 +48,7 @@
 /* line 38, ../../src/screen/navigation.scss */
 .menu.tabs a {
   background: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   color: #415058;
   font-size: 9px;
   font-weight: bold;
@@ -68,7 +69,6 @@
   color: #fff;
   font-weight: normal;
   background: rgba(125, 141, 150, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0 inset;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0 inset;
