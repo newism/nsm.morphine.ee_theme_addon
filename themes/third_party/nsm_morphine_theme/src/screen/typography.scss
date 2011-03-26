@@ -1,0 +1,80 @@
+/*
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: Typography styles
+*
+* CONTENTS
+* ------------------------------------------------------------------------------
+* =type General type styles for elements
+* =headers H1-H6
+*/
+
+/* =type
+------------------------------------------------------------------------------*/
+/*html{
+    font-family:"Arial";
+    font-size:12px;
+    line-height:18px;
+}
+*/
+
+/* =headers
+------------------------------------------------------------------------------*/
+/*h1, h2, h3, h4, h5, h6{}
+h1{margin-top:36px; margin-bottom:27px; font-size:36px;}
+h2{margin-top:27px; margin-bottom:18px; font-size:27px;}
+h3{margin-top:27px; margin-bottom:18px; font-size:21px;}
+h4{margin:18px 0;  font-size:18px;}
+h5{margin:18px 0;  font-size:14px;}
+h6{margin:18px 0;  font-size:12px;}*/
+
+.mor {
+	font-size:12px;
+}
+
+.mor h1 {
+	border-bottom:1px solid #323f47;
+	color:#323f47;
+	font-size:20px;
+	margin:18px 0 18px 0;
+	padding-bottom:8px;
+}
+.mor h2 {
+	border-bottom:1px dotted #5F6C74;
+	font-size:18px;
+	margin:27px 0 18px 0;
+	padding-bottom:8px;
+}
+.mor h3 {
+	font-size:16px;
+	margin:18px 0 18px 0;
+}
+.mor h4 {
+	font-size:14px;
+	margin:18px 0 18px 0;
+}
+.mor h5 {
+	font-size:12px;
+	margin:18px 0 18px 0;
+}
+.mor h6{
+	font-size:12px;
+	margin:18px 0 18px 0;
+}
+
+.mor p, .mor ol, .mor ul, .mor dl, .mor blockquote{}
+.mor ol, .mor ul, .mor dl, .mor blockquote{
+	margin-left:2em;
+}
+
+.tag-list {
+	margin-top:18px;
+}
+
+.tag-list li{
+	display:inline-block;
+	width:20%;
+}
+
+ul.fiveCol li{width:20%; float:left;}

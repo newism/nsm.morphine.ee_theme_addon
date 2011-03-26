@@ -55,7 +55,7 @@
 			{
 				$(".no-custom-field-group-error", obj.dom.$container).show();
 			}
-			console.log(options);
+			// console.log(options);
 		}
 	}
 

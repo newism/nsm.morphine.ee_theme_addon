@@ -1,9 +1,8 @@
 /*
-* Author: 		Leevi Grahan
-* Contact:		leevi@newism.com.au
-* Version:		0.1
-* Updated:		04/02/2010
-* Notes:		This is the core scren file for the entire site.
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: This is the core scren file for the entire site.
 *
 * CONTENTS
 * -------------------------
@@ -12,23 +11,34 @@
 * =alerts 	Alerts
 * 
 */
-
 /* =HTML5
 ------------------------------------------------------------------------------*/
-article,header,footer,section,figure{display:block;}
+/* line 18, ../../src/screen/base.scss */
+article, header, footer, section, figure {
+  display: block; }
 
 /* =utils Utility classes
 ------------------------------------------------------------------------------*/
-.sr{position:absolute; top:-99999px; left:-99999px;}
-.clearfix:after,
-#accessoryTabs:after,
-ul.fourCol:after,
-ul.fiveCol:after{
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	zoom: 1;
-}
+/* line 22, ../../src/screen/base.scss */
+.sr {
+  position: absolute;
+  top: -99999px;
+  left: -99999px; }
+
+/* line 25, ../../src/screen/base.scss */
+#accessoryTabs:after, ul.fourCol:after, ul.fiveCol:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  zoom: 1; }
+
+/* line 38, ../../src/screen/base.scss */
+#accessoriesDiv .accessory .mor, #accessoriesDiv .accessorySection .mor a:link, #accessoriesDiv .accessorySection .mor a:visited {
+  color: #5F6C74; }
+
+/* line 43, ../../src/screen/base.scss */
+#accessoriesDiv .accessorySection .mor a:link, #accessoriesDiv .accessorySection .mor a:visited {
+  text-decoration: underline; }

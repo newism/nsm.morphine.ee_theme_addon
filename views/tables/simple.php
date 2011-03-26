@@ -98,7 +98,63 @@
 			</tbody>
 		</table>
 	</div>
-	
+
+	<div class="tg">
+		<h2>Simple table group w/ nested table</h2>
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">Heading 1</th>
+					<th scope="col">Heading 2</th>
+					<th scope="col">Heading 3</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>&nbsp;</td>
+					<td>Foot 2</td>
+					<td>Foot 3</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<th scope="row">Heading 3</th>
+					<td>
+						<table class="tg">
+							<thead>
+								<tr>
+									<th scope="col">Heading 1</th>
+									<th scope="col">Heading 2</th>
+									<th scope="col">Heading 3</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td>&nbsp;</td>
+									<td>Foot 2</td>
+									<td>Foot 3</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr class="even">
+									<th scope="row">Heading 3</th>
+									<td>td</td>
+									<td>td</td>
+								</tr>
+								<tr class="odd">
+									<th scope="row">Heading 3</th>
+									<td>td</td>
+									<td>td</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>td</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
 	<div class="tg">
 		<h2>Simple table group w/ alerts</h2>
 		<div class="alert info">A sample info alert</div>
@@ -186,6 +242,7 @@
 					<td>&nbsp;</td>
 					<td>Foot 2</td>
 					<td>Foot 3</td>
+					<td>Foot 4</td>
 				</tr>
 			</tfoot>
 			<tbody>
