@@ -18,6 +18,7 @@ class Nsm_morphine_theme_acc
 	var $version	 	= '1.0.1';
 	var $description	= 'Accessory for NSM Morphine theme.';
 	var $sections	 	= array();
+	var $debug			= false;
 
 	/**
 	* Set Sections
@@ -41,18 +42,19 @@ class Nsm_morphine_theme_acc
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
-		/*
-		$js_libs = array(
-						'NSM_MagicCheckboxes', 'NSM_Stripeable', 'NSM_UpdateInputsOnChange',
-						'NSM_Cloneable', 'NSM_Navigation', 'NSM_AttributeAssigner',
-						'tablednd.0.5', 'behaviours'
-		);
+		if(!$this->debug) {
+			$EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/compressed.js"></script>');
+		} else {
+			$js_libs = array(
+							'NSM_MagicCheckboxes', 'NSM_Stripeable', 'NSM_UpdateInputsOnChange',
+							'NSM_Cloneable', 'NSM_Navigation', 'NSM_AttributeAssigner',
+							'tablednd.0.5', 'behaviours'
+			);
 
-		foreach ($js_libs as $lib) {
-			$EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/jquery.'.$lib.'.js"></script>');
+			foreach ($js_libs as $lib) {
+				$EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/jquery.'.$lib.'.js"></script>');
+			}
 		}
-		*/
-		$EE->cp->add_to_head('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/compressed.js"></script>');
 
 		$this->sections[] = '<script type="text/javascript" charset="utf-8">$("#accessoryTabs a.nsm_morphine_theme").parent().remove();</script>';
 	}
