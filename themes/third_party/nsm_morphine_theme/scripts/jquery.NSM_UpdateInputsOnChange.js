@@ -30,7 +30,11 @@
 			if(!$targets) return;
 
 			$targets.each(function(index) {
+
 				var $self = $(this);
+
+				// for multiple rows
+				index = Math.floor(index / e.data.opts.targetGroupCount);
 
 				// update the input name
 				$self.find("[name^="+e.data.opts.inputNamePrefix+"]").each(function() {
@@ -56,9 +60,10 @@
 		],
 		customUpdateEvents: [],
 		targetSelector: 'tbody tr',
+		targetGroupCount: 1,
 		inputNamePrefix: "",
 		inputOrderKey: "s_order",
-		inputDeleteKey: "delete"
+		inputDeleteKey: "delete",
 	};
 
 })(jQuery);

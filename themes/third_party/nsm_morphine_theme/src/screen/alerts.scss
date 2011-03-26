@@ -1,0 +1,78 @@
+@import "compass";
+
+/*
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: Alert styles
+*
+* CONTENTS
+* -------------------------
+* =alerts 	Alerts
+* 
+*/
+
+/* =alerts Alerts and info
+------------------------------------------------------------------------------ */
+
+.mor .alert {
+	background:#fff;
+	color:inherit;
+	font-size:12px;
+	line-height:1.5em;
+	list-style-type:none;
+	margin:9px 0;
+	padding:7px 10px;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	color:inherit;
+	border:1px solid rgba(0,0,0,.2);
+
+	@include box-shadow(rgba(255,255,255,.5), 0, 1px, 0);
+}
+.mor .tg h2 + .alert {
+	border-top:0;
+}
+.mor td.alert {
+	@include box-shadow(none);
+}
+.mor .alert > :first-child {
+	margin-top:0 !important;
+}
+.mor .alert > :last-child {
+	margin-bottom:0 !important;
+}
+
+.mor .tg .alert {
+	border-width:0 0 1px 0;
+	margin:0;
+	@include box-shadow(none);
+}
+
+/* General information for the user before or after they tak an action */
+.mor .alert.info {
+	background-color: #fffcbf;
+	@include linear-gradient(color-stops( rgba(255,255,255,.3),  rgba(255,255,255,0)));
+}
+/* User has completed an action successfully */
+.mor .alert.success {
+	background-color: #74a92d;
+	@include linear-gradient(color-stops( rgba(255,255,255,.85),  rgba(255,255,255,.8)));
+}
+.mor .alert .success {
+	color: #74a92d;
+}
+
+/* User has made an error due to an action */
+.mor .alert.error {
+	background: #a72226;
+	@include linear-gradient(color-stops( rgba(255,255,255,.9),  rgba(255,255,255,.85)));
+}
+.mor .alert .error {
+	color: #a72226;
+}
+
+.mor .tg .alert {
+	border-width: 0 0 1px 0;
+	margin: 0;
+	@include box-shadow(none);
+}

@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /*
-* Author:       Leevi Grahan
-* Contact:      leevi@newism.com.au
-* Version:      0.1
-* Notes:        Styles for all table groups and tables
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: Styles for all table groups and tables
 *
 * CONTENTS
 * --------------------------------------------------------------------------------
@@ -10,7 +11,6 @@
 * =table    Standard tables
 * =data     Date Tables
 */
-
 /*
 
 Tables and Table groups
@@ -34,186 +34,207 @@ Tables and Table groups
         </thead>
 </div>
 */
-
-.mor .tg,
-.mor .tg h2,
-.mor .tg h3,
-.mor table{
-    border-color:rgb(167,182,191);
-    border-style:solid;
-    border-width:0;
-	position:relative;
-}
-
 /* =tg
 ------------------------------------------------------------------------------*/
-.mor .tg{
-    background:transparent;
-    border-width:1px;
-    color:#333;
-    margin-top:9px;
-    margin-bottom:18px;
-    -webkit-box-shadow:#fff 0 1px 0;
-}
-.mor .tg > :first-child{border-top:0 !important;}
-.mor .tg h2{
-    background:#323f47;
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(255,255,255,0))),
-        -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.1)), to(rgba(72,102,118,0)));
-    background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
-    border-left-width:0;
-    border-right-width:0;
-    text-shadow: 0px -1px 0px #000;
-    color:#fff;
-    font-size:14px;
-    font-weight:normal;
-    line-height:20px;
-    margin:-4px -1px 0 -1px;
-    padding:8px 10px;
-    position:relative;
-    text-transform:uppercase;
-    -webkit-border-top-left-radius:4px;
-    -webkit-border-top-right-radius:4px;
-    -moz-border-radius:4px 4px 0 0;
-}
+/* line 48, ../../src/screen/tables.scss */
+.mor .tg {
+  background: #ECF1F4;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 18px;
+  margin-top: 9px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0; }
 
-.mor .tg h3{
-    background:#fff;
-    border-top-color:#a7b6bf;
-    border-top-width:1px;
-    border-top-style:solid;
-    color:#333 !important;
-    font-size:14px !important;
-    margin:0 !important;
-    padding:10px !important;
-    text-transform:uppercase;
-}
+/* line 56, ../../src/screen/tables.scss */
+.accessorySection .mor .tg {
+  background: #ecf1f4;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
 
-.mor .tg h2 + h3{border-top:0;}
-.mor .tg ul, .mor .tg ol{margin:15px 0 0 30px; list-style-type:disc;}
-.mor .tg ol{list-style-type:alpha;}
-.mor .tg .menu{margin:0;}
+/* line 61, ../../src/screen/tables.scss */
+.mor .tg h2 {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #37444D;
+  margin: 0;
+  padding: 9px;
+  font-size: 16px; }
 
-.mor .tg .info :first-child{margin-top:0!important;}
-.mor .tg .info :last-child{margin-bottom:0!important;}
+/* line 69, ../../src/screen/tables.scss */
+#mainContent .mor .tg h3 {
+  background: #fff;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  color: #37444D;
+  margin: 0;
+  padding: 9px;
+  font-size: 13px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 0 inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 0 inset; }
+
+/* line 89, ../../src/screen/tables.scss */
+.mor .tg .actions {
+  padding: 9px; }
 
 /* =table
 ------------------------------------------------------------------------------*/
+/* line 96, ../../src/screen/tables.scss */
+.mor table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: -1px 0 0 0 !important;
+  /* Always move a table back up 1px */
+  border-bottom: 1px solid #c5ced4;
+  width: 100%; }
 
-.mor table{
-	background:#fff;
-    border-collapse:collapse;
-    color:#666;
-    font-size:11px;
-    margin:0!important;
-    width:100%;
-}
-    .mor table .note{
-        color:#666;
-        display:block;
-        font-weight:normal;
-        font-size:10px;
-        margin-top:3px;
-    }
-    .mor table tr{}
-        .mor table th,
-        .mor table td{line-height:18px; padding:6px 10px;}
-        .mor table th{font-size:11px; text-align:left; vertical-align:middle;}
-        .mor table th.sub-heading{font-weight:normal; width:130px;}
-        .mor table td{font-size:10px;}
-        .mor table td.dragHandle{cursor:move;}
+/* line 103, ../../src/screen/tables.scss */
+.mor table tr.odd {
+  background-color: rgba(255, 255, 255, 0.5); }
 
-        .mor table thead{
-            background-color:#adbcc4;
-            background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,0)));            background-image:-moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0));
-            background-image:-moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0));
-            border-top:1px solid #a7b6bf;
-            border-bottom:none;
-            color:#fff;
-            text-shadow:0 -1px 1px #7d8d96;
-        }
-		.mor table:first-child thead:first-child{border-top:0;}
-            .mor table thead tr{border-bottom:1px solid #fff;}
-            .mor table thead th{font-size:12px;}
-        .mor table tfoot{
-            border-top:3px double #a7b6bf;
-            font-weight:bold;
-        }
+/* line 107, ../../src/screen/tables.scss */
+.mor table tr.selected {
+  background: #009e00;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%); }
 
+/* line 111, ../../src/screen/tables.scss */
+.mor table label {
+  font-size: 12px; }
 
-    .mor table tbody tr{border-top:1px dotted #a7b6bf;}
-    .mor table tbody:first-child tr:first-child{border-top-style:solid;}
-    .mor table tbody tr.odd{}
-    .mor table tbody tr.even{background-color: #f5f8f9}
+/* line 114, ../../src/screen/tables.scss */
+.mor table .note {
+  font-size: 11px;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px; }
 
-    .mor table tbody th[scope=row]{width:200px;}
+/* line 122, ../../src/screen/tables.scss */
+.mor table th, .mor table td {
+  border-color: #c5ced4;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-right-style: dotted;
+  padding: 7px 9px;
+  text-align: left; }
+
+/* line 135, ../../src/screen/tables.scss */
+.mor table tr th:last-child, .mor table tr td:last-child {
+  border-right: none; }
+
+/* line 138, ../../src/screen/tables.scss */
+.mor table thead {
+  background: #9aa9b3;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  color: #fff;
+  font-size: 12px; }
+
+/* line 146, ../../src/screen/tables.scss */
+.mor table thead th {
+  border-right: 1px solid #849099;
+  border-top: 1px solid #849099;
+  border-bottom: 1px solid #849099;
+  font-weight: normal;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0; }
+
+/* line 161, ../../src/screen/tables.scss */
+.mor table tbody th[scope=row] {
+  width: 200px; }
+
+/* line 164, ../../src/screen/tables.scss */
+.mor table th.sub-heading {
+  font-weight: normal; }
 
 /* =datatable Data tables are used for displaying tabular data
 ------------------------------------------------------------------------------*/
+/* line 171, ../../src/screen/tables.scss */
+.mor table.data col.id {
+  width: 50px; }
 
-    .mor table.data col.id{width:50px;}
-    .mor table.data col.date{width:120px;}
-
-    .mor table.data th:first-child,
-    .mor table.data td:first-child{border-left:none;}
-    .mor table.data th{border-left:1px dotted rgba(255, 255, 255,.25);}
-    .mor table.data td{border-left:1px dotted rgba(184, 198, 206,.5)}
-
-    .mor table.data tbody th,
-    .mor table.data tbody td{padding:4px 10px;}
-    .mor table.data tbody th[scope=row]{width:auto;}
+/* line 174, ../../src/screen/tables.scss */
+.mor table.data col.date {
+  width: 120px; }
 
 /* =col-sortable Sortable columns
 ------------------------------------------------------------------------------*/
+/* line 193, ../../src/screen/tables.scss */
+table.col-sortable > thead th.sorting, table.col-sortable > thead th.header, table.col-sortable > thead th.headerSortDown, table.col-sortable > thead th.headerSortUp {
+  background-image: url("../../images/bg/sort-unsorted.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+  padding-right: 22px; }
 
-.mor table.col-sortable thead th.header{
-	background-image:url('../../images/bg/sort-unsorted.png');
-	background-repeat:no-repeat;
-	background-position:center right;
-	cursor:pointer;
-	padding-right:20px;
-}
+/* line 201, ../../src/screen/tables.scss */
+table.col-sortable > thead th.sorting:hover, table.col-sortable > thead th.header:hover {
+  background-image: url("../../images/bg/sort-unsorted-hover.png"); }
 
-.mor table.col-sortable thead th.header:hover{background-image:url('../../images/bg/sort-unsorted-hover.png');}
-.mor table.col-sortable thead th.header.headerSortDown,
-.mor table.col-sortable thead th.header.headerSortUp{background-color:rgba(255,255,255,.1);}
-.mor table.col-sortable thead th.header.headerSortDown{background-image: url('../../images/bg/sort-down.png'); }
-.mor table.col-sortable thead th.header.headerSortUp{background-image: url('../../images/bg/sort-up.png'); }
+/* line 207, ../../src/screen/tables.scss */
+table.col-sortable > thead th.headerSortDown, table.col-sortable > thead th.headerSortUp, table.col-sortable > thead th.headerSortDown:hover, table.col-sortable > thead th.headerSortUp:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center right;
+  background-repeat: no-repeat; }
+
+/* line 213, ../../src/screen/tables.scss */
+table.col-sortable > thead th.headerSortDown, table.col-sortable > thead th.headerSortDown:hover {
+  background-image: url("../../images/bg/sort-down.png"); }
+
+/* line 217, ../../src/screen/tables.scss */
+table.col-sortable > thead th.headerSortUp, table.col-sortable > thead th.headerSortUp:hover {
+  background-image: url("../../images/bg/sort-up.png"); }
 
 /* =row-sortable Sortable rows
 ------------------------------------------------------------------------------*/
+/* line 225, ../../src/screen/tables.scss */
+.mor table.row-sortable tr.tDnD_whileDrag, .mor table.row-sortable tr.odd.tDnD_whileDrag {
+  background: #323f47;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-top-style: solid;
+  border-top-color: #000;
+  border-bottom-color: #000;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  cursor: move; }
 
-.mor table.row-sortable tr.tDnD_whileDrag,
-.mor table.row-sortable tr.odd.tDnD_whileDrag{
-    background:#323f47;
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.4)), to(rgba(0,0,0,.2))),
-        -webkit-gradient(radial, 50% 0, 0, 50% 0, 400, from(rgba(72,102,118,.2)), to(rgba(72,102,118,0)));
-    background-image:-moz-linear-gradient(top, rgba(0,0,0,.4), rgba(0,0,0,.2));
-	border-top-style:solid;
-	border-top-color:#000;
-	border-bottom-color:#000;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
-	cursor:move;
-}
+/* line 236, ../../src/screen/tables.scss */
+.mor table.row-sortable tr td.dragHandle {
+  width: 18px; }
 
-.mor table.row-sortable tr td.dragHandle{width:18px;}
-.mor table.row-sortable tr.tDnD_whileDrag th,
-.mor table.row-sortable tr.tDnD_whileDrag td{color:#fff; text-shadow:#000 0 -1px 0;}
-
+/* line 240, ../../src/screen/tables.scss */
+.mor table.row-sortable tr.tDnD_whileDrag th, .mor table.row-sortable tr.tDnD_whileDrag td {
+  color: #fff;
+  text-shadow: black 0 -1px 0; }
 
 /* =cloneable Cloneable tables allow the user to add as many rows as nessecary
 ------------------------------------------------------------------------------*/
-.mor table.cloneable{
-	border-bottom:1px solid rgb(167,182,191);
-}
-.mor table.cloneable + .actions{
-	background:#fff;
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.1));
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.1)));
-}
-.mor table.cloneable + .actions:active{background:#fff;}
-.mor table.cloneable + .actions .add{
-	padding-top:27px;
-	width:100%;
-}
+/* line 248, ../../src/screen/tables.scss */
+.mor table.cloneable {
+  border-bottom: 1px solid #a7b6bf; }
+
+/* line 251, ../../src/screen/tables.scss */
+.mor table.cloneable + .actions {
+  background: #fff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  padding: 0; }
+
+/* line 256, ../../src/screen/tables.scss */
+.mor table.cloneable + .actions:active {
+  background: #fff; }
+
+/* line 259, ../../src/screen/tables.scss */
+.mor table.cloneable + .actions .add {
+  padding-top: 27px;
+  width: 100%; }
