@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 * Author: Leevi Grahan
 * Contact: leevi@newism.com.au
@@ -12,7 +11,7 @@
 */
 /* =alerts Alerts and info
 ------------------------------------------------------------------------------ */
-/* line 18, ../../src/screen/alerts.scss */
+/* line 18, ../../sass-src/screen/alerts.scss */
 .mor .alert {
   background: #fff;
   color: inherit;
@@ -24,31 +23,31 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
-  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0;
-  box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 0; }
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 
-/* line 32, ../../src/screen/alerts.scss */
+/* line 32, ../../sass-src/screen/alerts.scss */
 .mor .tg h2 + .alert {
   border-top: 0; }
 
-/* line 35, ../../src/screen/alerts.scss */
+/* line 35, ../../sass-src/screen/alerts.scss */
 .mor td.alert {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none; }
 
-/* line 38, ../../src/screen/alerts.scss */
+/* line 38, ../../sass-src/screen/alerts.scss */
 .mor .alert > :first-child {
   margin-top: 0 !important; }
 
-/* line 41, ../../src/screen/alerts.scss */
+/* line 41, ../../sass-src/screen/alerts.scss */
 .mor .alert > :last-child {
   margin-bottom: 0 !important; }
 
-/* line 45, ../../src/screen/alerts.scss */
+/* line 45, ../../sass-src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
@@ -58,38 +57,41 @@
   box-shadow: none; }
 
 /* General information for the user before or after they tak an action */
-/* line 52, ../../src/screen/alerts.scss */
+/* line 52, ../../sass-src/screen/alerts.scss */
 .mor .alert.info {
   background-color: #fffcbf;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%); }
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
 
 /* User has completed an action successfully */
-/* line 57, ../../src/screen/alerts.scss */
+/* line 57, ../../sass-src/screen/alerts.scss */
 .mor .alert.success {
   background-color: #74a92d;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.8) 100%); }
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8)); }
 
-/* line 61, ../../src/screen/alerts.scss */
+/* line 61, ../../sass-src/screen/alerts.scss */
 .mor .alert .success {
   color: #74a92d; }
 
 /* User has made an error due to an action */
-/* line 66, ../../src/screen/alerts.scss */
+/* line 66, ../../sass-src/screen/alerts.scss */
 .mor .alert.error {
   background: #a72226;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%); }
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
 
-/* line 70, ../../src/screen/alerts.scss */
+/* line 70, ../../sass-src/screen/alerts.scss */
 .mor .alert .error {
   color: #a72226; }
 
-/* line 74, ../../src/screen/alerts.scss */
+/* line 74, ../../sass-src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;

@@ -26,11 +26,11 @@ h3{margin-top:27px; margin-bottom:18px; font-size:21px;}
 h4{margin:18px 0;  font-size:18px;}
 h5{margin:18px 0;  font-size:14px;}
 h6{margin:18px 0;  font-size:12px;}*/
-/* line 32, ../../src/screen/typography.scss */
+/* line 32, ../../sass-src/screen/typography.scss */
 .mor {
   font-size: 12px; }
 
-/* line 36, ../../src/screen/typography.scss */
+/* line 36, ../../sass-src/screen/typography.scss */
 .mor h1 {
   border-bottom: 1px solid #323f47;
   color: #323f47;
@@ -38,47 +38,47 @@ h6{margin:18px 0;  font-size:12px;}*/
   margin: 18px 0 18px 0;
   padding-bottom: 8px; }
 
-/* line 43, ../../src/screen/typography.scss */
+/* line 43, ../../sass-src/screen/typography.scss */
 .mor h2 {
   border-bottom: 1px dotted #5F6C74;
   font-size: 18px;
   margin: 27px 0 18px 0;
   padding-bottom: 8px; }
 
-/* line 49, ../../src/screen/typography.scss */
+/* line 49, ../../sass-src/screen/typography.scss */
 .mor h3 {
   font-size: 16px;
   margin: 18px 0 18px 0; }
 
-/* line 53, ../../src/screen/typography.scss */
+/* line 53, ../../sass-src/screen/typography.scss */
 .mor h4 {
   font-size: 14px;
   margin: 18px 0 18px 0; }
 
-/* line 57, ../../src/screen/typography.scss */
+/* line 57, ../../sass-src/screen/typography.scss */
 .mor h5 {
   font-size: 12px;
   margin: 18px 0 18px 0; }
 
-/* line 61, ../../src/screen/typography.scss */
+/* line 61, ../../sass-src/screen/typography.scss */
 .mor h6 {
   font-size: 12px;
   margin: 18px 0 18px 0; }
 
-/* line 67, ../../src/screen/typography.scss */
+/* line 67, ../../sass-src/screen/typography.scss */
 .mor ol, .mor ul, .mor dl, .mor blockquote {
   margin-left: 2em; }
 
-/* line 71, ../../src/screen/typography.scss */
+/* line 71, ../../sass-src/screen/typography.scss */
 .tag-list {
   margin-top: 18px; }
 
-/* line 75, ../../src/screen/typography.scss */
+/* line 75, ../../sass-src/screen/typography.scss */
 .tag-list li {
   display: inline-block;
   width: 20%; }
 
-/* line 80, ../../src/screen/typography.scss */
+/* line 80, ../../sass-src/screen/typography.scss */
 ul.fiveCol li {
   width: 20%;
   float: left; }
