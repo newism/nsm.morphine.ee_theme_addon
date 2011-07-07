@@ -42,7 +42,7 @@
 				});
 
 				// update the input order
-				$self.find("[name$=\["+e.data.opts.inputOrderKey+"\]]").each(function() {
+				$self.find("[name$=\\["+e.data.opts.inputOrderKey+"\\]]").each(function() {
 					this.value = index;
 				});
 			});
