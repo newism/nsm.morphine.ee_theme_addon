@@ -28,8 +28,10 @@
 .menu.tabs {
   background-color: #c8d2d7;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0 0 18px 0;

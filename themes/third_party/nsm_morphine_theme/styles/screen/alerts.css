@@ -61,8 +61,10 @@
 .mor .alert.info {
   background-color: #fffcbf;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
 
 /* User has completed an action successfully */
@@ -70,8 +72,10 @@
 .mor .alert.success {
   background-color: #74a92d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8)); }
 
 /* line 61, ../../sass-src/screen/alerts.scss */
@@ -83,8 +87,10 @@
 .mor .alert.error {
   background: #a72226;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
 
 /* line 70, ../../sass-src/screen/alerts.scss */
