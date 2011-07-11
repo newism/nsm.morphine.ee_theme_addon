@@ -4,7 +4,7 @@
  * NSM Morphine Theme CP 
  *
  * @package			NsmMorphineTheme
- * @version			2.0.0
+ * @version			2.0.1
  * @author			Leevi Graham <http://leevigraham.com>
  * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
