@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 * Author: Leevi Grahan
 * Contact: leevi@newism.com.au
@@ -18,32 +17,32 @@
 */
 /* =form
 ------------------------------------------------------------------------------*/
-/* line 31, ../../src/screen/forms.scss */
+/* line 31, ../../sass-src/screen/forms.scss */
 .mor label {
   font-weight: inherit!important;
   margin-right: 5px; }
 
-/* line 39, ../../src/screen/forms.scss */
+/* line 39, ../../sass-src/screen/forms.scss */
 .mor label.checkbox {
   display: block; }
 
-/* line 45, ../../src/screen/forms.scss */
+/* line 45, ../../sass-src/screen/forms.scss */
 .mor input[type="text"], .mor textarea {
   font-size: 12px;
   font-family: inherit;
   line-height: 1.3em;
   padding: 5px !important;
   border-top-color: #9fa8aa;
-  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 0;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 0;
-  -o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 0;
-  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 0; }
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
 
-/* line 57, ../../src/screen/forms.scss */
+/* line 57, ../../sass-src/screen/forms.scss */
 .mor input[type=checkbox], .mor input[type=radio] {
   margin-right: 3px; }
 
-/* line 61, ../../src/screen/forms.scss */
+/* line 61, ../../sass-src/screen/forms.scss */
 .mor input[type=text] {
   width: 100%;
   padding: 5px;
@@ -52,11 +51,11 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 67, ../../src/screen/forms.scss */
+/* line 67, ../../sass-src/screen/forms.scss */
 .mor input.hasDatePicker {
   width: 100px; }
 
-/* line 71, ../../src/screen/forms.scss */
+/* line 71, ../../sass-src/screen/forms.scss */
 .mor textarea {
   height: 100px;
   width: 100%;
@@ -65,11 +64,11 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 78, ../../src/screen/forms.scss */
+/* line 78, ../../sass-src/screen/forms.scss */
 .mor input[type=text]:focus, .mor textarea:focus {
   outline: none;
   border: 1px solid #323F47; }
 
-/* line 83, ../../src/screen/forms.scss */
+/* line 83, ../../sass-src/screen/forms.scss */
 .mor .fg {
   margin-right: 10px; }

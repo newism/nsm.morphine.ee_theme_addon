@@ -40,7 +40,7 @@
 			if(e.data.opts.deleteMethod == "remove")
 				$target.remove();
 			else
-				$target.hide().end().find("[name$=\["+e.data.opts.inputDeleteKey+"\]]").each(function(index) { this.value = 1; });
+				$target.hide().end().find("[name$=\\["+e.data.opts.inputDeleteKey+"\\]]").each(function(index) { this.value = 1; });
 
 			e.data.dom.$container.trigger("deleteCloneEnd.NSM_Cloneable");
 			return false;
