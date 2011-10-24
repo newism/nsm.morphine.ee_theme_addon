@@ -66,7 +66,9 @@ Tables and Table groups
   font-size: 16px; }
 
 /* line 69, ../../src/screen/tables.scss */
-#mainContent .mor .tg h3 {
+#mainContent .mor .tg h3,
+#accessoriesDiv .mor .tg h3
+ {
   background: #fff;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
   color: #37444D;
