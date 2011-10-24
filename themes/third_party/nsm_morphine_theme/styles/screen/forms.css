@@ -33,10 +33,10 @@
   line-height: 1.3em;
   padding: 5px !important;
   border-top-color: #9fa8aa;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  -o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0; }
 
 /* line 57, ../../sass-src/screen/forms.scss */
 .mor input[type=checkbox], .mor input[type=radio] {

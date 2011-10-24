@@ -23,10 +23,10 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0; }
 
 /* line 32, ../../sass-src/screen/alerts.scss */
 .mor .tg h2 + .alert {

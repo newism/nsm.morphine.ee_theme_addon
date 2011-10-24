@@ -27,7 +27,7 @@ nav{}
 	margin:0 0 18px 0;
 	overflow:auto;
 	padding:7px 7px 0 7px;
-	@include box-shadow(rgba(255,255,255,.5), 0, 1px, 0, 0, inset);
+	@include box-shadow(rgba(255,255,255,.5) 0 1px 0 0 inset);
 }
 
 .tg .menu.tabs{
@@ -53,5 +53,5 @@ nav{}
 	font-weight:normal;
 	background:rgba(125, 141, 150, .5);
 	text-shadow:0 -1px 0 rgba(0,0,0,.2);
-	@include box-shadow(rgba(0,0,0,.2), 0, 1px, 0, 0, inset);
+	@include box-shadow(rgba(0,0,0,.2) 0 1px 0 0 inset);
 }
