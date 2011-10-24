@@ -1,7 +1,12 @@
 NSM Morphine - Changelog
 ========================
 
-v2.0.1
+v2.0.2
+------
+
+* [fix] Added missing .scss source files
+
+v2.0.2
 ------
 
 * [enhancement] Updated scripts for EE v2.2.x compatibility

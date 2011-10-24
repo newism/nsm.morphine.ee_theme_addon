@@ -3,7 +3,7 @@
  * NSM Morphine Theme Language File
  *
  * @package			NsmMorphineTheme
- * @version			2.0.1
+ * @version			2.0.2
  * @author			Leevi Graham <http://leevigraham.com>
  * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
