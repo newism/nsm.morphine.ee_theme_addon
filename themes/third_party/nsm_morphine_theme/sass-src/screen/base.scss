@@ -1,0 +1,44 @@
+/*
+* Author: Leevi Grahan
+* Contact: leevi@newism.com.au
+* Version: 2.0
+* Notes: This is the core scren file for the entire site.
+*
+* CONTENTS
+* -------------------------
+* =HTML5 	HTML5 fixes
+* =utils 	Utility classes
+* =alerts 	Alerts
+* 
+*/
+
+/* =HTML5
+------------------------------------------------------------------------------*/
+article,header,footer,section,figure{display:block;}
+
+/* =utils Utility classes
+------------------------------------------------------------------------------*/
+.sr{position:absolute; top:-99999px; left:-99999px;}
+#accessoryTabs:after,
+ul.fourCol:after,
+ul.fiveCol:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	zoom: 1;
+}
+
+
+#accessoriesDiv .accessory .mor,
+#accessoriesDiv .accessorySection .mor a:link,
+#accessoriesDiv .accessorySection .mor a:visited{
+	color:#5F6C74;
+}
+
+#accessoriesDiv .accessorySection .mor a:link,
+#accessoriesDiv .accessorySection .mor a:visited{
+	text-decoration:underline;
+}
