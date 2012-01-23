@@ -68,13 +68,19 @@ Tables and Table groups
 }
 #mainContent .mor .tg h3{
 	background:#fff;
-	border-bottom:1px dotted rgba(0,0,0,.2);
+	border-bottom:1px solid rgba(0,0,0,.2);
 	color:#37444D;
 	margin:0;
 	padding:9px;
-	font-size:13px;
+	font-size:14px;
 	text-shadow:0 1px 0 rgba(255,255,255,.75);
 	@include box-shadow(rgba(255,255,255,.3), 0, 1px, 0, 0, inset);
+}
+#mainContent .mor .tg h4{
+	margin:0;
+	border-bottom:1px solid rgba(0,0,0,.2);
+	font-size:12px;
+	padding:9px;
 }
 
 .mor .tg h2 + h3{}
@@ -100,10 +106,10 @@ Tables and Table groups
 	border-bottom:1px solid #c5ced4;
 	width:100%;
 }
-	.mor table tr.odd{ 
+	.mor table tr.even{ 
 		background-color:rgba(255,255,255,.5); 
 	}
-	.mor table tr.even{}
+	.mor table tr.odd{}
 	.mor table tr.selected{
 		background:#009e00;
 		@include linear-gradient(color-stops( rgba(255,255,255,.9),	 rgba(255,255,255,.85)));
