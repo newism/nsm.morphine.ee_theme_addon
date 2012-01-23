@@ -76,3 +76,19 @@
 	margin: 0;
 	@include box-shadow(none);
 }
+
+#accessoryTabs li .badge{
+	display:inline-block;
+	border:1px solid #D1D5DE;
+	line-height:11px;
+	font-size:11px;
+	text-align:center;
+	padding:3px;
+	margin-left:5px;
+	min-width:11px;
+
+	@include border-radius(20px);
+}
+#accessoryTabs li.current .badge{
+	border-color:rgba(0,0,0,.2);
+}

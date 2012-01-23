@@ -4,7 +4,7 @@
  * Install / Uninstall and updates the modules
  *
  * @package			NsmMorphineTheme
- * @version			2.0.1
+ * @version			2.0.2
  * @author			Leevi Graham <http://leevigraham.com>
  * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
@@ -13,7 +13,7 @@
  */
 class Nsm_morphine_theme_upd
 {
-	public $version = '2.0.1';
+	public $version = '2.0.2';
 	private $has_cp_backend = true;
 	private $has_publish_fields = false;
 	private $has_tabs = false;
