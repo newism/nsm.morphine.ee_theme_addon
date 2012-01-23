@@ -1,6 +1,11 @@
 NSM Morphine - Changelog
 ========================
 
+v2.0.3
+------
+
+* [enhancement] Added tab hiding to javascript for NSM addons
+
 v2.0.2
 ------
 
