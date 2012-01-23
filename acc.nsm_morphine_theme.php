@@ -3,7 +3,7 @@
  * NSM Morphine Theme Accessory
  *
  * @package			NsmMorphineTheme
- * @version			2.0.1
+ * @version			2.0.2
  * @author			Leevi Graham <http://leevigraham.com> - Technical Director, Newism
  * @copyright 		Copyright (c) 2007-2010 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
@@ -15,7 +15,7 @@ class Nsm_morphine_theme_acc
 {
 	var $name	 		= 'NSM Morphine theme';
 	var $id	 			= 'nsm_morphine_theme';
-	var $version	 	= '2.0.1';
+	var $version	 	= '2.0.2';
 	var $description	= 'Accessory for NSM Morphine theme.';
 	var $sections	 	= array();
 	var $debug			= false;

@@ -1,6 +1,11 @@
 NSM Morphine - Changelog
 ========================
 
+v2.0.2
+------
+
+* [enhancement] Added .badge style for accessories
+
 v2.0.1
 ------
 
