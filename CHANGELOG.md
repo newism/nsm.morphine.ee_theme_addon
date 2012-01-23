@@ -1,13 +1,18 @@
 NSM Morphine - Changelog
 ========================
 
+v2.0.3
+------
+
+* [enhancement] Added tab hiding to javascript for NSM addons
+
 v2.0.2
 ------
 
+* [enhancement] Added .badge style for accessories
 * [fix] Added missing .scss source files
 
-v2.0.2
-------
+v2.0.1
 
 * [enhancement] Updated scripts for EE v2.2.x compatibility
 

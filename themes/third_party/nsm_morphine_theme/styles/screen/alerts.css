@@ -105,3 +105,24 @@
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none; }
+
+/* line 80, ../../sass-src/screen/alerts.scss */
+#accessoryTabs li .badge {
+  display: inline-block;
+  border: 1px solid #D1D5DE;
+  line-height: 11px;
+  font-size: 11px;
+  text-align: center;
+  padding: 3px;
+  margin-left: 5px;
+  min-width: 11px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px; }
+
+/* line 92, ../../sass-src/screen/alerts.scss */
+#accessoryTabs li.current .badge {
+  border-color: rgba(0, 0, 0, 0.2); }
