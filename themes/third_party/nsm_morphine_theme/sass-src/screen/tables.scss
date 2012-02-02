@@ -106,11 +106,11 @@ Tables and Table groups
 	border-bottom:1px solid #c5ced4;
 	width:100%;
 }
-	.mor table tr.even{ 
+	.mor table tbody tr.even{ 
 		background-color:rgba(255,255,255,.5); 
 	}
-	.mor table tr.odd{}
-	.mor table tr.selected{
+	.mor table tbody tr.odd{}
+	.mor table tbody tr.selected{
 		background:#009e00;
 		@include linear-gradient(color-stops( rgba(255,255,255,.9),	 rgba(255,255,255,.85)));
 	}
