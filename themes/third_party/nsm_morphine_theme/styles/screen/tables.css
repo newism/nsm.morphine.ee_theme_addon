@@ -101,7 +101,7 @@ Tables and Table groups
   width: 100%; }
 
 /* line 109, ../../sass-src/screen/tables.scss */
-.mor table tbody tr.even {
+.mor table tbody > tr.even {
   background-color: rgba(255, 255, 255, 0.5); }
 
 /* line 113, ../../sass-src/screen/tables.scss */

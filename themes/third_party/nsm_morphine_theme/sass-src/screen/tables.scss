@@ -106,7 +106,7 @@ Tables and Table groups
 	border-bottom:1px solid #c5ced4;
 	width:100%;
 }
-	.mor table tbody tr.even{ 
+	.mor table tbody > tr.even{ 
 		background-color:rgba(255,255,255,.5); 
 	}
 	.mor table tbody tr.odd{}
