@@ -51,12 +51,12 @@
 /* General information for the user before or after they tak an action */
 .mor .alert.info {
 	background-color: #fffcbf;
-	@include linear-gradient(color-stops( rgba(255,255,255,.3),  rgba(255,255,255,0)));
+	@include background-image(linear-gradient( rgba(255,255,255,.3),  rgba(255,255,255,0)));
 }
 /* User has completed an action successfully */
 .mor .alert.success {
 	background-color: #74a92d;
-	@include linear-gradient(color-stops( rgba(255,255,255,.85),  rgba(255,255,255,.8)));
+	@include background-image(linear-gradient( rgba(255,255,255,.85),  rgba(255,255,255,.8)));
 }
 .mor .alert .success {
 	color: #74a92d;
@@ -65,10 +65,19 @@
 /* User has made an error due to an action */
 .mor .alert.error {
 	background: #a72226;
-	@include linear-gradient(color-stops( rgba(255,255,255,.9),  rgba(255,255,255,.85)));
+	@include background-image(linear-gradient( rgba(255,255,255,.9),  rgba(255,255,255,.85)));
 }
 .mor .alert .error {
 	color: #a72226;
+}
+
+/* Warning */
+.mor .alert.warning {
+	background: #ff8100;
+	@include background-image(linear-gradient( rgba(255,255,255,.9),  rgba(255,255,255,.85)));
+}
+.mor .alert .warning {
+	color: #ff8100;
 }
 
 .mor .tg .alert {

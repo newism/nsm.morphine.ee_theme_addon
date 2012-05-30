@@ -112,7 +112,7 @@ Tables and Table groups
 	.mor table tbody tr.odd{}
 	.mor table tbody tr.selected{
 		background:#009e00;
-		@include linear-gradient(color-stops( rgba(255,255,255,.9),	 rgba(255,255,255,.85)));
+		@include background-image(linear-gradient( rgba(255,255,255,.9),	 rgba(255,255,255,.85)));
 	}
 	.mor table label{
 		font-size:12px;
@@ -143,7 +143,7 @@ Tables and Table groups
 		}
 		.mor table thead{
 			background:#9aa9b3;
-			@include linear-gradient(color-stops( rgba(255,255,255,.2),	 rgba(255,255,255,0)));
+			@include background-image(linear-gradient( rgba(255,255,255,.2),	 rgba(255,255,255,0)));
 			color:#fff;
 			font-size:12px;
 		}
@@ -230,7 +230,7 @@ table.col-sortable > thead th.headerSortUp:hover{
 .mor table.row-sortable tr.tDnD_whileDrag,
 .mor table.row-sortable tr.odd.tDnD_whileDrag{
 	background:#323f47;
-	@include linear-gradient(color-stops( rgba(0,0,0,.4),  rgba(0,0,0,.2)));
+	@include background-image(linear-gradient( rgba(0,0,0,.4),  rgba(0,0,0,.2)));
 	border-top-style:solid;
 	border-top-color:#000;
 	border-bottom-color:#000;
@@ -256,7 +256,7 @@ table.col-sortable > thead th.headerSortUp:hover{
 }
 .mor table.cloneable + .actions{
 	background:#fff;
-	@include linear-gradient(color-stops( rgba(0,0,0,.0),  rgba(0,0,0,.1)));
+	@include background-image(linear-gradient( rgba(0,0,0,.0),  rgba(0,0,0,.1)));
 	padding:0;
 }
 .mor table.cloneable + .actions:active{

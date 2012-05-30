@@ -42,17 +42,15 @@ Tables and Table groups
   border-bottom-color: rgba(0, 0, 0, 0.4);
   margin-bottom: 18px;
   margin-top: 9px;
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); }
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05), 0, 3px, 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05), 0, 3px, 5px;
+  box-shadow: rgba(0, 0, 0, 0.05), 0, 3px, 5px; }
 
 /* line 56, ../../sass-src/screen/tables.scss */
 .accessorySection .mor .tg {
   background: #ecf1f4;
-  -moz-box-shadow: "none";
   -webkit-box-shadow: "none";
-  -o-box-shadow: "none";
+  -moz-box-shadow: "none";
   box-shadow: "none"; }
 
 /* line 61, ../../sass-src/screen/tables.scss */
@@ -73,10 +71,9 @@ Tables and Table groups
   padding: 9px;
   font-size: 14px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
-  -o-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3); }
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3), 0, 1px, 0, 0, inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3), 0, 1px, 0, 0, inset;
+  box-shadow: rgba(255, 255, 255, 0.3), 0, 1px, 0, 0, inset; }
 
 /* line 79, ../../sass-src/screen/tables.scss */
 #mainContent .mor .tg h4 {
@@ -108,11 +105,11 @@ Tables and Table groups
 .mor table tbody tr.selected {
   background: #009e00;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
 
 /* line 117, ../../sass-src/screen/tables.scss */
 .mor table label {
@@ -142,11 +139,11 @@ Tables and Table groups
 .mor table thead {
   background: #9aa9b3;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   color: #fff;
   font-size: 12px; }
 
@@ -156,7 +153,7 @@ Tables and Table groups
   border-top: 1px solid #849099;
   border-bottom: 1px solid #849099;
   font-weight: normal;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0; }
+  text-shadow: rgba(0, 0, 0, 0.5), 0, -1px, 0; }
 
 /* line 167, ../../sass-src/screen/tables.scss */
 .mor table tbody th[scope=row] {
@@ -210,11 +207,11 @@ table.col-sortable > thead th.headerSortUp, table.col-sortable > thead th.header
 .mor table.row-sortable tr.tDnD_whileDrag, .mor table.row-sortable tr.odd.tDnD_whileDrag {
   background: #323f47;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
   border-top-style: solid;
   border-top-color: #000;
   border-bottom-color: #000;
@@ -241,11 +238,11 @@ table.col-sortable > thead th.headerSortUp, table.col-sortable > thead th.header
 .mor table.cloneable + .actions {
   background: #fff;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   padding: 0; }
 
 /* line 262, ../../sass-src/screen/tables.scss */
