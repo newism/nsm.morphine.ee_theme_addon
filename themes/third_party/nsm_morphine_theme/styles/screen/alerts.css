@@ -23,10 +23,9 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5), 0, 1px, 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5), 0, 1px, 0;
+  box-shadow: rgba(255, 255, 255, 0.5), 0, 1px, 0; }
 
 /* line 32, ../../sass-src/screen/alerts.scss */
 .mor .tg h2 + .alert {
@@ -34,9 +33,8 @@
 
 /* line 35, ../../sass-src/screen/alerts.scss */
 .mor td.alert {
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  -o-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none; }
 
 /* line 38, ../../sass-src/screen/alerts.scss */
@@ -51,9 +49,8 @@
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  -o-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none; }
 
 /* General information for the user before or after they tak an action */
@@ -61,22 +58,22 @@
 .mor .alert.info {
   background-color: #fffcbf;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); }
 
 /* User has completed an action successfully */
 /* line 57, ../../sass-src/screen/alerts.scss */
 .mor .alert.success {
   background-color: #74a92d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0.8)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8)); }
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.8)); }
 
 /* line 61, ../../sass-src/screen/alerts.scss */
 .mor .alert .success {
@@ -87,26 +84,40 @@
 .mor .alert.error {
   background: #a72226;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
 
 /* line 70, ../../sass-src/screen/alerts.scss */
 .mor .alert .error {
   color: #a72226; }
 
-/* line 74, ../../sass-src/screen/alerts.scss */
+/* Warning */
+/* line 75, ../../sass-src/screen/alerts.scss */
+.mor .alert.warning {
+  background: #ff802a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)); }
+
+/* line 79, ../../sass-src/screen/alerts.scss */
+.mor .alert .warning {
+  color: #ff802a; }
+
+/* line 83, ../../sass-src/screen/alerts.scss */
 .mor .tg .alert {
   border-width: 0 0 1px 0;
   margin: 0;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  -o-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none; }
 
-/* line 80, ../../sass-src/screen/alerts.scss */
+/* line 89, ../../sass-src/screen/alerts.scss */
 #accessoryTabs li .badge {
   display: inline-block;
   border: 1px solid #D1D5DE;
@@ -116,13 +127,12 @@
   padding: 3px;
   margin-left: 5px;
   min-width: 11px;
-  -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
-  -o-border-radius: 20px;
+  -moz-border-radius: 20px;
   -ms-border-radius: 20px;
-  -khtml-border-radius: 20px;
+  -o-border-radius: 20px;
   border-radius: 20px; }
 
-/* line 92, ../../sass-src/screen/alerts.scss */
+/* line 101, ../../sass-src/screen/alerts.scss */
 #accessoryTabs li.current .badge {
   border-color: rgba(0, 0, 0, 0.2); }
