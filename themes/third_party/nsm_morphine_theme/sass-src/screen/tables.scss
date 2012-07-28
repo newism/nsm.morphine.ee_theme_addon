@@ -8,9 +8,9 @@
 *
 * CONTENTS
 * --------------------------------------------------------------------------------
-* =tg		Table groups
-* =table	Standard tables
-* =data		Date Tables
+* =tg       Table groups
+* =table    Standard tables
+* =data     Date Tables
 */
 
 /*
@@ -18,22 +18,22 @@
 Tables and Table groups
 
 <div class='mor-tg'>
-	<h2>Header</h2>
-	<div class='info'>Some information about the table group</div>
-	<div class='mor-alert error'>Error relating to the table group</div>
-	<table>
-		<thead>
-			<tr>
-				<th scope='col'>Header</th>
-				<th scope='col'>Header 2</th>
-			</tr>
-		</thead>
-		<body>
-			<tr>
-				<th scope='row'>Header</th>
-				<td>Content</td>
-			</tr>
-		</thead>
+    <h2>Header</h2>
+    <div class='info'>Some information about the table group</div>
+    <div class='mor-alert error'>Error relating to the table group</div>
+    <table>
+        <thead>
+            <tr>
+                <th scope='col'>Header</th>
+                <th scope='col'>Header 2</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <th scope='row'>Header</th>
+                <td>Content</td>
+            </tr>
+        </thead>
 </div>
 */
 
@@ -51,7 +51,7 @@ Tables and Table groups
 	border-bottom-color:rgba(0,0,0,.4);
 	margin-bottom:18px;
 	margin-top:9px;
-	@include box-shadow(rgba(0,0,0,.05), 0, 3px, 5px);
+	@include box-shadow(rgba(0,0,0,.05) 0 3px 5px);
 }
 .accessorySection .mor .tg{
 	background:#ecf1f4;
@@ -66,21 +66,16 @@ Tables and Table groups
 	padding:9px;
 	font-size:16px;
 }
-#mainContent .mor .tg h3{
+#mainContent .mor .tg h3,
+#accessoriesDiv .mor .tg h3{
 	background:#fff;
-	border-bottom:1px solid rgba(0,0,0,.2);
+	border-bottom:1px dotted rgba(0,0,0,.2);
 	color:#37444D;
 	margin:0;
 	padding:9px;
-	font-size:14px;
+	font-size:13px;
 	text-shadow:0 1px 0 rgba(255,255,255,.75);
-	@include box-shadow(rgba(255,255,255,.3), 0, 1px, 0, 0, inset);
-}
-#mainContent .mor .tg h4{
-	margin:0;
-	border-bottom:1px solid rgba(0,0,0,.2);
-	font-size:12px;
-	padding:9px;
+	@include box-shadow(rgba(255,255,255,.3) 0 1px 0 0 inset);
 }
 
 .mor .tg h2 + h3{}
@@ -106,26 +101,26 @@ Tables and Table groups
 	border-bottom:1px solid #c5ced4;
 	width:100%;
 }
-	.mor table tbody > tr.even{ 
+	.mor table tr.odd{ 
 		background-color:rgba(255,255,255,.5); 
 	}
-	.mor table tbody tr.odd{}
-	.mor table tbody tr.selected{
+	.mor table tr.even{}
+	.mor table tr.selected{
 		background:#009e00;
 		@include background-image(linear-gradient( rgba(255,255,255,.9),	 rgba(255,255,255,.85)));
 	}
 	.mor table label{
 		font-size:12px;
 	}
-	.mor table .note{
+    .mor table .note{
 		font-size:11px;
 		font-weight:normal;
 		display:block;
 		margin-top:5px;
 	}
-	.mor table tr{}
-		.mor table th,
-		.mor table td{
+    .mor table tr{}
+        .mor table th,
+        .mor table td{
 			border-color:#c5ced4;
 			border-width:1px 1px 0 0;
 			border-style:solid;
@@ -133,38 +128,38 @@ Tables and Table groups
 			padding:7px 9px;
 			text-align:left;
 		}
-		.mor table th{}
-		.mor table th.sub-heading{}
-		.mor table td{}
-		.mor table td.dragHandle{}
+        .mor table th{}
+        .mor table th.sub-heading{}
+        .mor table td{}
+        .mor table td.dragHandle{}
 		.mor table tr th:last-child,
 		.mor table tr td:last-child{
 			border-right:none;
 		}
-		.mor table thead{
+        .mor table thead{
 			background:#9aa9b3;
 			@include background-image(linear-gradient( rgba(255,255,255,.2),	 rgba(255,255,255,0)));
 			color:#fff;
 			font-size:12px;
 		}
 		.mor table:first-child thead:first-child{}
-			.mor table thead tr{}
-			.mor table thead th{
+            .mor table thead tr{}
+            .mor table thead th{
 				border-right:1px solid #849099;
 				border-top:1px solid #849099;
 				border-bottom:1px solid #849099;
 				font-weight:normal;
 				@include text-shadow(rgba(0,0,0,.5), 0, -1px, 0);
 			}
-		.mor table tfoot{}
+        .mor table tfoot{}
 
 
-	.mor table tbody tr{}
-	.mor table tbody:first-child tr:first-child{}
-	.mor table tbody tr.odd{}
-	.mor table tbody tr.even{}
+    .mor table tbody tr{}
+    .mor table tbody:first-child tr:first-child{}
+    .mor table tbody tr.odd{}
+    .mor table tbody tr.even{}
 
-	.mor table tbody th[scope=row]{
+    .mor table tbody th[scope=row]{
 		width:200px;
 	}
 	.mor table th.sub-heading{
@@ -174,21 +169,21 @@ Tables and Table groups
 /* =datatable Data tables are used for displaying tabular data
 ------------------------------------------------------------------------------*/
 
-	.mor table.data col.id{
+    .mor table.data col.id{
 		width:50px;
 	}
-	.mor table.data col.date{
+    .mor table.data col.date{
 		width:120px;
 	}
 
-	.mor table.data th:first-child,
-	.mor table.data td:first-child{}
-	.mor table.data th{}
-	.mor table.data td{}
+    .mor table.data th:first-child,
+    .mor table.data td:first-child{}
+    .mor table.data th{}
+    .mor table.data td{}
 
-	.mor table.data tbody th,
-	.mor table.data tbody td{}
-	.mor table.data tbody th[scope=row]{}
+    .mor table.data tbody th,
+    .mor table.data tbody td{}
+    .mor table.data tbody th[scope=row]{}
 
 
 /* =col-sortable Sortable columns
@@ -229,7 +224,7 @@ table.col-sortable > thead th.headerSortUp:hover{
 ------------------------------------------------------------------------------*/
 .mor table.row-sortable tr.tDnD_whileDrag,
 .mor table.row-sortable tr.odd.tDnD_whileDrag{
-	background:#323f47;
+    background:#323f47;
 	@include background-image(linear-gradient( rgba(0,0,0,.4),  rgba(0,0,0,.2)));
 	border-top-style:solid;
 	border-top-color:#000;

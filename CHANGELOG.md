@@ -10,9 +10,9 @@ v2.0.2
 ------
 
 * [enhancement] Added .badge style for accessories
+* [fix] Added missing .scss source files
 
 v2.0.1
-------
 
 * [enhancement] Updated scripts for EE v2.2.x compatibility
 

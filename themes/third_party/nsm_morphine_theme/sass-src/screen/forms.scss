@@ -49,7 +49,7 @@ form.mor .actions{}
 	padding: 5px !important;
 	border-top-color: #9fa8aa;
 
-	@include box-shadow(rgba(255,255,255,.2), 0, 1px, 0);
+	@include box-shadow(rgba(255,255,255,.2) 0 1px 0);
 }
 
 .mor input{}
