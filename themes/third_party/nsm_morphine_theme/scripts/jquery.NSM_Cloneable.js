@@ -34,14 +34,31 @@
 		_deleteClone: function(e){
 			$eTarget = $(e.target);
 			e.data.dom.$container.trigger("deleteCloneStart.NSM_Cloneable");
-			if(! $eTarget.is(e.data.opts.deleteTrigger) || !confirm(e.data.opts.deleteConfirmMsg)) return;
+			if (!$eTarget.is(e.data.opts.deleteTrigger)) {
+			  return;
+			}
+			if (e.data.opts.deleteConfirm && !confirm(e.data.opts.deleteConfirmMsg)) {
+			  return;
+			}
 			$target = ($.isFunction(e.data.opts.deleteTriggerCloneSelector)) ? e.data.opts.deleteTriggerCloneSelector.call($eTarget) : $($eTarget.parents(e.data.opts.deleteTriggerCloneSelector));
 
-			if(e.data.opts.deleteMethod == "remove")
+			if (e.data.opts.deleteMethod == "remove") {
 				$target.remove();
-			else
+			} else if(e.data.opts.deleteMethod == "disable") {
+			  
+			  if ($target.hasClass('disabled')) {
+			    $target.removeClass('disabled');
+			    $target.find(':input').not($eTarget).attr('disabled', false).removeAttr('disabled');
+			    $eTarget.attr('checked', 'checked');
+			  } else {
+			    $target.addClass('disabled');
+			    $target.find(':input').not($eTarget).attr('disabled', 'disabled');
+			    $eTarget.attr('checked', false).removeAttr('checked');
+			  }
+			  return;
+			} else {
 				$target.hide().end().find("[name$=\\["+e.data.opts.inputDeleteKey+"\\]]").each(function(index) { this.value = 1; });
-
+      }
 			e.data.dom.$container.trigger("deleteCloneEnd.NSM_Cloneable");
 			return false;
 		}
@@ -56,7 +73,8 @@
 		deleteTrigger: '.delete',
 		deleteMethod: 'remove',
 		deleteTriggerCloneSelector: "tr:eq(0)",
-		deleteConfirmMsg: "Are you sure you want to delete this row?"
+		deleteConfirm: true,
+		deleteConfirmMsg: "Are you sure you want to delete this row?",
 	};
 
 })(jQuery);
