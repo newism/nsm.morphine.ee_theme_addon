@@ -30,15 +30,17 @@ class Nsm_morphine_theme_acc
 	*/
 	function set_sections()
 	{
+		defined('URL_THIRD_THEMES') OR define('URL_THIRD_THEMES', $this->EE->config->item('theme_folder_url').'third_party/');
+
 		$EE =& get_instance();
 
-		$theme_folder_url = $EE->config->item('theme_folder_url');
+		$theme_folder_url = URL_THIRD_THEMES;
 
 		if (substr($theme_folder_url, -1) != '/') {
 			$theme_folder_url .= '/';
 		}
 
-		$theme_folder_url .= "third_party/nsm_morphine_theme/";
+		$theme_folder_url .= "nsm_morphine_theme/";
 
 		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
