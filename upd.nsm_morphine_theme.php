@@ -4,16 +4,16 @@
  * Install / Uninstall and updates the modules
  *
  * @package			NsmMorphineTheme
- * @version			2.0.3
+ * @version			2.0.4
  * @author			Leevi Graham <http://leevigraham.com>
- * @copyright 		Copyright (c) 2007-2012 Newism <http://newism.com.au>
+ * @copyright 		Copyright (c) 2007-2014 Newism <http://newism.com.au>
  * @license 		Commercial - please see LICENSE file included with this distribution
  * @link			http://expressionengine-addons.com/nsm-morphine-theme
  * @see				http://expressionengine.com/public_beta/docs/development/modules.html#update_file
  */
 class Nsm_morphine_theme_upd
 {
-	public $version = '2.0.3';
+	public $version = '2.0.4';
 	private $has_cp_backend = true;
 	private $has_publish_fields = false;
 	private $has_tabs = false;
