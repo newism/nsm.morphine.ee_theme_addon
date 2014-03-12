@@ -18,7 +18,7 @@ class Nsm_morphine_theme_acc
 	var $version	 	= '2.0.3';
 	var $description	= 'Accessory for NSM Morphine theme.';
 	var $sections	 	= array();
-	var $debug			= false;
+	var $debug			= true;
 
 	/**
 	* Set Sections
