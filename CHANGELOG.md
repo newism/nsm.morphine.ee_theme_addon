@@ -1,6 +1,11 @@
 NSM Morphine - Changelog
 ========================
 
+v2.0.4
+------
+
+* [fix] Addressed EE 2.8.0 issues
+
 v2.0.3
 ------
 
