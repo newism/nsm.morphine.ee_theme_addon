@@ -5,7 +5,7 @@
 
 	$.fn.NSM_UpdateInputsOnChange = function(options) {
 		var opts = $.extend({}, $.fn.NSM_UpdateInputsOnChange.defaults, options);
-		opts.inputRegx = new RegExp(opts.inputNamePrefix+"\\[\\d*?\\]");
+		opts.inputRegx = new RegExp(opts.inputNamePrefix.replace(/\[/g, '\\[').replace(/\]/g, '\\]')+"\\[\\d*?\\]");
 		return this.each(function() {
 			var $self = $(this);
 			var dom = {$container: $self};
@@ -31,14 +31,18 @@
 
 			$targets.each(function(index) {
 
-				var $self = $(this);
+				var $self = $(this),
+                    selector = e.data.opts.inputNamePrefix.replace(/\[/g, '\\\\[').replace(/\]/g, '\\\\]');
 
 				// for multiple rows
 				index = Math.floor(index / e.data.opts.targetGroupCount);
 
 				// update the input name
-				$self.find("[name^="+e.data.opts.inputNamePrefix+"]").each(function() {
-					this.name = this.name.replace(e.data.opts.inputRegx, e.data.opts.inputNamePrefix+"["+(index)+"]");
+				$self.find(":input[name^="+selector+"]").each(function() {
+					this.name = this.name.replace(
+                        e.data.opts.inputRegx,
+                        e.data.opts.inputNamePrefix+"["+(index)+"]"
+                    );
 				});
 
 				// update the input order
