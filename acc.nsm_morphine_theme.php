@@ -42,7 +42,7 @@ class Nsm_morphine_theme_acc
 
 		$theme_folder_url .= "nsm_morphine_theme/";
 
-		$EE->cp->add_to_foot('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
+		$EE->cp->add_to_head('<link rel="stylesheet" type="text/css" href="'.$theme_folder_url.'styles/screen.css" />');
 
 		if(!$this->debug) {
 			$EE->cp->add_to_foot('<script type="text/javascript" charset="utf-8" src="'.$theme_folder_url.'scripts/compressed.js"></script>');
